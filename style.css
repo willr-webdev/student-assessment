@@ -77,10 +77,10 @@
 .grid-form {
   display: grid;
   grid-template-areas: 
-  'label input'
-  'label input'
-  'label input'
-  'label input';
+  'teacher-label teacher-input'
+  'class-label class-input'
+  'date-label date-input'
+  'student-label student-input';
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto auto;
 }
@@ -103,6 +103,7 @@
 
 .grid-date-label {
   grid-area: date-label;
+}
 
 .grid-date-input {
   grid-area: date-input;  
@@ -126,14 +127,6 @@ form input {
 
 form input.sightWords {
   margin: 5px 5px 5px 45%;
-}
-
-#assessor {
-  
-}
-
-div.general label {
-  
 }
 
 div.general form {
