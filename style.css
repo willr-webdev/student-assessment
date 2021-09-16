@@ -18,7 +18,7 @@
     'upperCase lowerCase sounds thirdNine'
     'upperCase lowerCase sounds fourthNine';
   grid-template-columns: auto auto auto auto;
-  grid-template-rows: 1.5fr 1fr 4fr 4fr 4fr 4fr;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 /* Grid items */
@@ -69,4 +69,20 @@
 }
 .fourthNine {
   grid-area: fourthNine;
+}
+
+/* .sightWords {
+  align-self: flex-start;
+} */
+
+.line {
+  border-bottom: thin solid black;
+}
+
+form input {
+  margin: 10px 5px 10px 45%;
+}
+
+form input.sightWords {
+  margin: 5px 5px 5px 45%;
 }
