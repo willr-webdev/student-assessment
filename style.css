@@ -1,5 +1,5 @@
 :root {
-  max-width: 600px;;
+  max-width: 1200px;;
 }
 
 /* Centers container, sets a maximum width and makes sure elements can flow past it*/
@@ -22,7 +22,7 @@
     'upperCase lowerCase sounds secondNine'
     'upperCase lowerCase sounds thirdNine'
     'upperCase lowerCase sounds fourthNine';
-  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr 3fr;
   grid-template-rows: auto auto auto auto auto auto;
 }
 
@@ -158,9 +158,9 @@ form.grid-form1 label{
   margin-left: 5px;
 }
 
-div.general form {
+/* div.general form {
   width: 100%;
-}
+} */
 
 form.grid-form label {
   font-size: 16px;
@@ -190,24 +190,21 @@ form {
 .grid-form1 {
   display: grid;
   grid-template-areas: 
-  'a1 a2 a3'
-  'a4 a5 a6'
-  'a7 a8 a9'
-  'a10 a11 a12'
-  'a13 a14 a15'
-  'a16 a17 a18';
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
+  'a1 a2 a3 a4 a5 a6'
+  'a7 a8 a9 a10 a11 a12'
+  'a13 a14 a15 a16 a17 a18';
+  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
 }
 .sw191-input {
   grid-area: a1;
-  justify-self: start; /* horizontal */
+  /* justify-self: start; /* horizontal */
   padding: 5px;
   align-self: center; /* vertical */
 }
 .sw191-label {
   grid-area: a1;
-  justify-self: start; /* horizontal */
+  /*justify-self: start; /* horizontal */
   padding: 5px;
   align-self: center; /*vertical */
 }
@@ -410,8 +407,8 @@ form {
   'b13 b14 b15'
   'b16 b17 b18'
   'b19 b20 b21';
-  grid-template-columns:1fr 1fr 1.5fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 .grid-form3 {
@@ -425,8 +422,8 @@ form {
   'c16 c17 c18'
   'c19 c20 c21'
   'c22 c23 c24';
-  grid-template-columns:1fr 1fr 1.5fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
 }
 
 .grid-form4 {
@@ -439,6 +436,6 @@ form {
   'd13 d14 d15'
   'd16 d17 d18'
   'd19 d20 d21';
-  grid-template-columns:1fr 1fr 1.5fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
 }
