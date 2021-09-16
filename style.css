@@ -151,7 +151,11 @@ form input {
 }
 
 form input.sightWords {
-  margin: 5px 5px 5px 45%;
+  margin-left: 5px;
+}
+
+form.grid-form1 label{
+  margin-left: 5px;
 }
 
 div.general form {
@@ -192,21 +196,207 @@ form {
   'a10 a11 a12'
   'a13 a14 a15'
   'a16 a17 a18';
-  grid-template-columns:1fr 1fr 1.5fr 1fr;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
 }
-
 .sw191-input {
   grid-area: a1;
   justify-self: start; /* horizontal */
-  width: 65%;
+  padding: 5px;
   align-self: center; /*vertical */
 }
-
 .sw191-label {
   grid-area: a1;
   justify-self: start; /* horizontal */
-  padding-right: 10px;
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw192-input {
+  grid-area: a2;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw192-label {
+  grid-area: a2;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw193-input {
+  grid-area: a3;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw193-label {
+  grid-area: a3;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw194-input {
+  grid-area: a4;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw194-label {
+  grid-area: a4;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}.sw195-input {
+  grid-area: a5;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw195-label {
+  grid-area: a5;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw196-input {
+  grid-area: a6;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw196-label {
+  grid-area: a6;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}.sw197-input {
+  grid-area: a7;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw197-label {
+  grid-area: a7;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw198-input {
+  grid-area: a8;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw198-label {
+  grid-area: a8;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw199-input {
+  grid-area: a9;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw199-label {
+  grid-area: a9;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1910-input {
+  grid-area: a10;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1910-label {
+  grid-area: a10;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1911-input {
+  grid-area: a11;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1911-label {
+  grid-area: a11;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1912-input {
+  grid-area: a12;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1912-label {
+  grid-area: a12;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}.sw1913-input {
+  grid-area: a13;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1913-label {
+  grid-area: a13;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1914-input {
+  grid-area: a14;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1914-label {
+  grid-area: a14;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}.sw1915-input {
+  grid-area: a15;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1915-label {
+  grid-area: a15;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1916-input {
+  grid-area: a16;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1916-label {
+  grid-area: a16;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1917-input {
+  grid-area: a17;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw1917-label {
+  grid-area: a17;
+  justify-self: end; /* horizontal */
+  padding: 5px;
   align-self: center; /*vertical */
 }
 
