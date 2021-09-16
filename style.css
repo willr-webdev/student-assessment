@@ -203,7 +203,7 @@ form {
   grid-area: a1;
   justify-self: start; /* horizontal */
   padding: 5px;
-  align-self: center; /*vertical */
+  align-self: center; /* vertical */
 }
 .sw191-label {
   grid-area: a1;
