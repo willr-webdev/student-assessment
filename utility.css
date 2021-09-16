@@ -6,12 +6,6 @@
   margin: 0;
 }
 
-/* Wrapper full viewport */
-
-/* .wrapper {
-  min-height: 100vh;
-} */
-
 /* Black text throughout */
 
 body {
@@ -100,19 +94,3 @@ bc-k {
 bc-gray1 {
   background-color: gray;
 }
-
-
-/* alignment */
-
-/* .ctr-content {
-  place-content: center;
-}
-.ctr-items {
-  place-items: center;
-} */
-/* .ctr-text {
-  text-align: center;
-} */
-/* .ctr-element {
-  margin: 0 auto;
-} */
