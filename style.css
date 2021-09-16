@@ -1,3 +1,7 @@
+:root {
+  max-width: 600px;;
+}
+
 /* Centers container, sets a maximum width and makes sure elements can flow past it*/
 
 .container {
@@ -9,6 +13,7 @@
 /* GRID */
 
 .grid-container {
+  border: 2px solid black;
   display: grid;
   grid-template-areas:
     'general general general general'
@@ -17,7 +22,7 @@
     'upperCase lowerCase sounds secondNine'
     'upperCase lowerCase sounds thirdNine'
     'upperCase lowerCase sounds fourthNine';
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-rows: auto auto auto auto auto auto;
 }
 
@@ -70,10 +75,6 @@
   grid-area: fourthNine;
 }
 
-/* .sightWords {
-  align-self: flex-start;
-} */
-
 .grid-form {
   display: grid;
   grid-template-areas: 
@@ -81,40 +82,64 @@
   '. class-label class-input .'
   '. date-label date-input .'
   '. student-label student-input .';
-  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-columns:1fr 1fr 1.5fr 1fr;
   grid-template-rows: auto auto auto auto;
 }
 
 .grid-teacher-label {
-  grid-area: teacherlabel;  
+  grid-area: teacherlabel;
+  justify-self: end; /* horizontal */
+  padding-right: 10px;
+  align-self: center; /*vertical */
 }
 
 .grid-teacher-input {
-  grid-area: teacherinput;  
+  grid-area: teacherinput;
+  justify-self: start; /* horizontal */
+  width: 65%;
+  align-self: center; /*vertical */
 }
 
 .grid-class-label {
-  grid-area: class-label;  
+  grid-area: class-label;
+  justify-self: end; /* horizontal */
+  padding-right: 10px;
+  align-self: center; /*vertical */  
 }
 
 .grid-class-input {
-  grid-area: class-input;  
+  grid-area: class-input;
+  justify-self: start; /* horizontal */
+  width: 65%;
+  align-self: center; /*vertical */
 }
 
 .grid-date-label {
   grid-area: date-label;
+  justify-self: end; /* horizontal */
+  padding-right: 10px;
+  align-self: center; /*vertical */
 }
 
 .grid-date-input {
-  grid-area: date-input;  
+  grid-area: date-input;
+  justify-self: start; /* horizontal */
+  width: 65%;
+  align-self: center; /*vertical */
 }
 
 .grid-student-label {
-  grid-area: student-label;  
+  grid-area: student-label;
+  justify-self: end; /* horizontal */
+  padding-right: 10px;
+  align-self: center; /*vertical */ 
 }
 
 .grid-student-input {
-  grid-area: student-input;  
+  grid-area: student-input;
+  justify-self: start; /* horizontal */
+  width: 65%;
+  align-self: center; /*vertical */ 
 }
 
 .line {
@@ -122,7 +147,7 @@
 }
 
 form input {
-  margin: 10px 5px 10px 45%;
+  margin: 10px 5px 10px 5px;
 }
 
 form input.sightWords {
@@ -131,4 +156,99 @@ form input.sightWords {
 
 div.general form {
   width: 100%;
+}
+
+form.grid-form label {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+form {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.mrg-left-50 {
+  margin-left: 50px;;
+}
+
+.mrg-left-25 {
+  margin-left: 25px;;
+}
+
+.brd-left {
+  border-left: 1px solid black;
+}
+
+.brd-right {
+  border-right: 1px solid black;
+}
+
+.grid-form1 {
+  display: grid;
+  grid-template-areas: 
+  'a1 a2 a3'
+  'a4 a5 a6'
+  'a7 a8 a9'
+  'a10 a11 a12'
+  'a13 a14 a15'
+  'a16 a17 a18';
+  grid-template-columns:1fr 1fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.sw191-input {
+  grid-area: a1;
+  justify-self: start; /* horizontal */
+  width: 65%;
+  align-self: center; /*vertical */
+}
+
+.sw191-label {
+  grid-area: a1;
+  justify-self: start; /* horizontal */
+  padding-right: 10px;
+  align-self: center; /*vertical */
+}
+
+.grid-form2 {
+  display: grid;
+  grid-template-areas: 
+  'b1 b2 b3'
+  'b4 b5 b6'
+  'b7 b8 b9'
+  'b10 b11 b12'
+  'b13 b14 b15'
+  'b16 b17 b18'
+  'b19 b20 b21';
+  grid-template-columns:1fr 1fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.grid-form3 {
+  display: grid;
+  grid-template-areas: 
+  'c1 c2 c3'
+  'c4 c5 c6'
+  'c7 c8 c9'
+  'c10 c11 c12'
+  'c13 c14 c15'
+  'c16 c17 c18'
+  'c19 c20 c21'
+  'c22 c23 c24';
+  grid-template-columns:1fr 1fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.grid-form4 {
+  display: grid;
+  grid-template-areas: 
+  'd1 d2 d3'
+  'd4 d5 d6'
+  'd7 d8 d9'
+  'd10 d11 d12'
+  'd13 d14 d15'
+  'd16 d17 d18'
+  'd19 d20 d21';
+  grid-template-columns:1fr 1fr 1.5fr 1fr;
+  grid-template-rows: auto auto auto auto;
 }
