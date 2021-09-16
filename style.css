@@ -6,7 +6,7 @@
   overflow: visible;
 }
 
-/* Grid container */
+/* GRID */
 
 .grid-container {
   display: grid;
@@ -21,13 +21,12 @@
   grid-template-rows: auto auto auto auto auto auto;
 }
 
-/* Grid items */
-
 .grid-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .general {
   grid-area: general;
   color: cornsilk;
@@ -75,6 +74,48 @@
   align-self: flex-start;
 } */
 
+.grid-form {
+  display: grid;
+  grid-template-areas: 
+  'label input'
+  'label input'
+  'label input'
+  'label input';
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.grid-teacher-label {
+  grid-area: teacher-label;  
+}
+
+.grid-teacher-input {
+  grid-area: teacher-input;  
+}
+
+.grid-class-label {
+  grid-area: class-label;  
+}
+
+.grid-class-input {
+  grid-area: class-input;  
+}
+
+.grid-date-label {
+  grid-area: date-label;
+
+.grid-date-input {
+  grid-area: date-input;  
+}
+
+.grid-student-label {
+  grid-area: student-label;  
+}
+
+.grid-student-input {
+  grid-area: student-input;  
+}
+
 .line {
   border-bottom: thin solid black;
 }
@@ -85,4 +126,16 @@ form input {
 
 form input.sightWords {
   margin: 5px 5px 5px 45%;
+}
+
+#assessor {
+  
+}
+
+div.general label {
+  
+}
+
+div.general form {
+  width: 100%;
 }
