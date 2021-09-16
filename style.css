@@ -77,20 +77,20 @@
 .grid-form {
   display: grid;
   grid-template-areas: 
-  'teacher-label teacher-input'
-  'class-label class-input'
-  'date-label date-input'
-  'student-label student-input';
-  grid-template-columns: 1fr 1fr;
+  '. teacherlabel teacherinput .'
+  '. class-label class-input .'
+  '. date-label date-input .'
+  '. student-label student-input .';
+  grid-template-columns:1fr 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
 }
 
 .grid-teacher-label {
-  grid-area: teacher-label;  
+  grid-area: teacherlabel;  
 }
 
 .grid-teacher-input {
-  grid-area: teacher-input;  
+  grid-area: teacherinput;  
 }
 
 .grid-class-label {
