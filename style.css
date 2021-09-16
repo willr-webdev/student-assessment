@@ -1,5 +1,5 @@
 :root {
-  max-width: 1200px;;
+  max-width: 1000px;;
 }
 
 /* Centers container, sets a maximum width and makes sure elements can flow past it*/
@@ -22,7 +22,7 @@
     'upperCase lowerCase sounds secondNine'
     'upperCase lowerCase sounds thirdNine'
     'upperCase lowerCase sounds fourthNine';
-  grid-template-columns: 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 4fr;
   grid-template-rows: auto auto auto auto auto auto;
 }
 
@@ -74,6 +74,8 @@
 .fourthNine {
   grid-area: fourthNine;
 }
+
+/* Top informational section */
 
 .grid-form {
   display: grid;
@@ -142,6 +144,8 @@
   align-self: center; /*vertical */ 
 }
 
+/* ---------------------------------- */
+
 .line {
   border-bottom: thin solid black;
 }
@@ -157,10 +161,6 @@ form input.sightWords {
 form.grid-form1 label{
   margin-left: 5px;
 }
-
-/* div.general form {
-  width: 100%;
-} */
 
 form.grid-form label {
   font-size: 16px;
@@ -186,6 +186,8 @@ form {
 .brd-right {
   border-right: 1px solid black;
 }
+
+/* Sight words 1st nine weeks */
 
 .grid-form1 {
   display: grid;
@@ -243,7 +245,8 @@ form {
   justify-self: end; /* horizontal */
   padding: 5px;
   align-self: center; /*vertical */
-}.sw195-input {
+}
+.sw195-input {
   grid-area: a5;
   justify-self: start; /* horizontal */
   padding: 5px;
@@ -266,7 +269,8 @@ form {
   justify-self: end; /* horizontal */
   padding: 5px;
   align-self: center; /*vertical */
-}.sw197-input {
+}
+.sw197-input {
   grid-area: a7;
   justify-self: start; /* horizontal */
   padding: 5px;
@@ -397,6 +401,8 @@ form {
   align-self: center; /*vertical */
 }
 
+/* Sight words 2nd nine weeks */
+
 .grid-form2 {
   display: grid;
   grid-template-areas: 
@@ -410,6 +416,260 @@ form {
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto;
 }
+
+.sw291-input {
+  grid-area: b1;
+  /* justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /* vertical */
+}
+.sw291-label {
+  grid-area: b1;
+  /*justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw292-input {
+  grid-area: b2;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw292-label {
+  grid-area: b2;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw293-input {
+  grid-area: b3;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw293-label {
+  grid-area: b3;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw294-input {
+  grid-area: b4;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw294-label {
+  grid-area: b4;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}.sw295-input {
+  grid-area: b5;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw295-label {
+  grid-area: b5;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw296-input {
+  grid-area: b6;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw296-label {
+  grid-area: b6;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw297-input {
+  grid-area: b7;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw297-label {
+  grid-area: b7;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw298-input {
+  grid-area: b8;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw298-label {
+  grid-area: b8;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw299-input {
+  grid-area: b9;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw299-label {
+  grid-area: b9;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2910-input {
+  grid-area: b10;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2910-label {
+  grid-area: b10;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2911-input {
+  grid-area: b11;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2911-label {
+  grid-area: b11;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2912-input {
+  grid-area: b12;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2912-label {
+  grid-area: b12;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2913-input {
+  grid-area: b13;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2913-label {
+  grid-area: b13;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2914-input {
+  grid-area: b14;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2914-label {
+  grid-area: b14;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2915-input {
+  grid-area: b15;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2915-label {
+  grid-area: b15;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2916-input {
+  grid-area: b16;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2916-label {
+  grid-area: b16;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2917-input {
+  grid-area: b17;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2917-label {
+  grid-area: b17;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2918-input {
+  grid-area: b18;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2918-label {
+  grid-area: b18;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2919-input {
+  grid-area: b19;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2919-label {
+  grid-area: b19;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2920-input {
+  grid-area: b20;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2920-label {
+  grid-area: b20;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2921-input {
+  grid-area: b21;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw2921-label {
+  grid-area: b21;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+
+/* Sight words 3rd nine weeks */
 
 .grid-form3 {
   display: grid;
@@ -425,6 +685,8 @@ form {
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
+
+/* Sight words 4th nine weeks */
 
 .grid-form4 {
   display: grid;
