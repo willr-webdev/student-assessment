@@ -154,10 +154,6 @@ form input {
   margin: 10px 5px 10px 5px;
 }
 
-/* form input.sightWords {
-  margin-left: 5px;
-} */
-
 form.grid-form label {
   font-size: 16px;
   font-weight: 100;
@@ -187,19 +183,18 @@ form {
   border-right: 1px solid black;
 }
 
-/* Sight words 1st nine weeks */
+/* SIGHT WORDS - 1ST NINE WEEKS */
 
 .grid-form1 {
   display: grid;
   grid-template-areas: 
-  'a1 a2 a3'
-  'a4 a5 a6'
-  'a7 a8 a9'
-  'a10 a11 a12'
-  'a13 a14 a15'
-  'a16 a17 a18';
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
+  'a1 a2 a3 a4'
+  'a5 a6 a7 a8'
+  'a9 a10 a11 a12'
+  'a13 a14 a15 a16'
+  'a17 a18 . .';
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
 }
 .sw191-input {
   grid-area: a1;
@@ -209,8 +204,8 @@ form {
 }
 .sw191-label {
   grid-area: a1;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw192-input {
@@ -221,8 +216,8 @@ form {
 }
 .sw192-label {
   grid-area: a2;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw193-input {
@@ -233,8 +228,8 @@ form {
 }
 .sw193-label {
   grid-area: a3;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw194-input {
@@ -245,8 +240,8 @@ form {
 }
 .sw194-label {
   grid-area: a4;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw195-input {
@@ -257,8 +252,8 @@ form {
 }
 .sw195-label {
   grid-area: a5;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw196-input {
@@ -269,8 +264,8 @@ form {
 }
 .sw196-label {
   grid-area: a6;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw197-input {
@@ -281,8 +276,8 @@ form {
 }
 .sw197-label {
   grid-area: a7;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw198-input {
@@ -293,8 +288,8 @@ form {
 }
 .sw198-label {
   grid-area: a8;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw199-input {
@@ -305,8 +300,8 @@ form {
 }
 .sw199-label {
   grid-area: a9;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw1910-input {
@@ -317,8 +312,8 @@ form {
 }
 .sw1910-label {
   grid-area: a10;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw1911-input {
@@ -329,8 +324,8 @@ form {
 }
 .sw1911-label {
   grid-area: a11;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw1912-input {
@@ -341,10 +336,11 @@ form {
 }
 .sw1912-label {
   grid-area: a12;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
-}.sw1913-input {
+}
+.sw1913-input {
   grid-area: a13;
   justify-self: start; /* horizontal */
   padding: 5px;
@@ -352,8 +348,8 @@ form {
 }
 .sw1913-label {
   grid-area: a13;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw1914-input {
@@ -364,10 +360,11 @@ form {
 }
 .sw1914-label {
   grid-area: a14;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
-}.sw1915-input {
+}
+.sw1915-input {
   grid-area: a15;
   justify-self: start; /* horizontal */
   padding: 5px;
@@ -375,8 +372,8 @@ form {
 }
 .sw1915-label {
   grid-area: a15;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw1916-input {
@@ -387,8 +384,8 @@ form {
 }
 .sw1916-label {
   grid-area: a16;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw1917-input {
@@ -399,25 +396,24 @@ form {
 }
 .sw1917-label {
   grid-area: a17;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 
-/* Sight words 2nd nine weeks */
+/* SIGHT WORDS - 2ND NINE WEEKS */
 
 .grid-form2 {
   display: grid;
   grid-template-areas: 
-  'b1 b2 b3'
-  'b4 b5 b6'
-  'b7 b8 b9'
-  'b10 b11 b12'
-  'b13 b14 b15'
-  'b16 b17 b18'
-  'b19 b20 b21';
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  'b1 b2 b3 b4'
+  'b5 b6 b7 b8'
+  'b9 b10 b11 b12'
+  'b13 b14 b15 b16'
+  'b17 b18 b19 b20'
+  'b21 . . .';
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 
 .sw291-input {
@@ -428,8 +424,8 @@ form {
 }
 .sw291-label {
   grid-area: b1;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw292-input {
@@ -440,8 +436,8 @@ form {
 }
 .sw292-label {
   grid-area: b2;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw293-input {
@@ -452,8 +448,8 @@ form {
 }
 .sw293-label {
   grid-area: b3;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw294-input {
@@ -464,8 +460,8 @@ form {
 }
 .sw294-label {
   grid-area: b4;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }.sw295-input {
   grid-area: b5;
@@ -475,8 +471,8 @@ form {
 }
 .sw295-label {
   grid-area: b5;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw296-input {
@@ -487,8 +483,8 @@ form {
 }
 .sw296-label {
   grid-area: b6;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw297-input {
@@ -499,8 +495,8 @@ form {
 }
 .sw297-label {
   grid-area: b7;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw298-input {
@@ -511,8 +507,8 @@ form {
 }
 .sw298-label {
   grid-area: b8;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw299-input {
@@ -523,8 +519,8 @@ form {
 }
 .sw299-label {
   grid-area: b9;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2910-input {
@@ -535,8 +531,8 @@ form {
 }
 .sw2910-label {
   grid-area: b10;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2911-input {
@@ -547,8 +543,8 @@ form {
 }
 .sw2911-label {
   grid-area: b11;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2912-input {
@@ -559,8 +555,8 @@ form {
 }
 .sw2912-label {
   grid-area: b12;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2913-input {
@@ -571,8 +567,8 @@ form {
 }
 .sw2913-label {
   grid-area: b13;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2914-input {
@@ -583,8 +579,8 @@ form {
 }
 .sw2914-label {
   grid-area: b14;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2915-input {
@@ -595,8 +591,8 @@ form {
 }
 .sw2915-label {
   grid-area: b15;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2916-input {
@@ -607,8 +603,8 @@ form {
 }
 .sw2916-label {
   grid-area: b16;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2917-input {
@@ -619,8 +615,8 @@ form {
 }
 .sw2917-label {
   grid-area: b17;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2918-input {
@@ -631,8 +627,8 @@ form {
 }
 .sw2918-label {
   grid-area: b18;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2919-input {
@@ -643,8 +639,8 @@ form {
 }
 .sw2919-label {
   grid-area: b19;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2920-input {
@@ -655,8 +651,8 @@ form {
 }
 .sw2920-label {
   grid-area: b20;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw2921-input {
@@ -667,26 +663,24 @@ form {
 }
 .sw2921-label {
   grid-area: b21;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+ 
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 
-/* Sight words 3rd nine weeks */
+/* SIGHT WORDS - 3RD NINE WEEKS */
 
 .grid-form3 {
   display: grid;
   grid-template-areas: 
-  'c1 c2 c3'
-  'c4 c5 c6'
-  'c7 c8 c9'
-  'c10 c11 c12'
-  'c13 c14 c15'
-  'c16 c17 c18'
-  'c19 c20 c21'
-  'c22 c23 c24';
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto auto;
+  'c1 c2 c3 c4'
+  'c5 c6 c7 c8'
+  'c9 c10 c11 c12'
+  'c13 c14 c15 c16'
+  'c17 c18 c19 c20'
+  'c21 c22 c23 c24';
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 .sw391-input {
   grid-area: c1;
@@ -696,8 +690,8 @@ form {
 }
 .sw391-label {
   grid-area: c1;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw392-input {
@@ -708,8 +702,8 @@ form {
 }
 .sw392-label {
   grid-area: c2;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw393-input {
@@ -720,8 +714,8 @@ form {
 }
 .sw393-label {
   grid-area: c3;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw394-input {
@@ -732,11 +726,11 @@ form {
 }
 .sw394-label {
   grid-area: c4;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
-.s395-input {
+.sw395-input {
   grid-area: c5;
   justify-self: start; /* horizontal */
   padding: 5px;
@@ -744,8 +738,8 @@ form {
 }
 .sw395-label {
   grid-area: c5;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw396-input {
@@ -756,8 +750,8 @@ form {
 }
 .sw396-label {
   grid-area: c6;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw397-input {
@@ -768,8 +762,8 @@ form {
 }
 .sw397-label {
   grid-area: c7;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw398-input {
@@ -780,8 +774,8 @@ form {
 }
 .sw398-label {
   grid-area: c8;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw399-input {
@@ -792,8 +786,8 @@ form {
 }
 .sw399-label {
   grid-area: c9;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3910-input {
@@ -804,8 +798,8 @@ form {
 }
 .sw3910-label {
   grid-area: c10;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3911-input {
@@ -816,8 +810,8 @@ form {
 }
 .sw3911-label {
   grid-area: c11;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3912-input {
@@ -828,8 +822,8 @@ form {
 }
 .sw3912-label {
   grid-area: c12;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3913-input {
@@ -840,8 +834,8 @@ form {
 }
 .sw3913-label {
   grid-area: c13;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3914-input {
@@ -852,8 +846,8 @@ form {
 }
 .sw3914-label {
   grid-area: c14;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3915-input {
@@ -864,8 +858,8 @@ form {
 }
 .sw3915-label {
   grid-area: c15;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3916-input {
@@ -876,8 +870,8 @@ form {
 }
 .sw3916-label {
   grid-area: c16;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3917-input {
@@ -888,8 +882,8 @@ form {
 }
 .sw3917-label {
   grid-area: c17;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3918-input {
@@ -900,8 +894,8 @@ form {
 }
 .sw3918-label {
   grid-area: c18;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3919-input {
@@ -912,8 +906,8 @@ form {
 }
 .sw3919-label {
   grid-area: c19;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3920-input {
@@ -924,8 +918,8 @@ form {
 }
 .sw3920-label {
   grid-area: c20;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3921-input {
@@ -936,8 +930,8 @@ form {
 }
 .sw3921-label {
   grid-area: c21;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3922-input {
@@ -948,8 +942,8 @@ form {
 }
 .sw3922-label {
   grid-area: c22;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3923-input {
@@ -960,8 +954,8 @@ form {
 }
 .sw3923-label {
   grid-area: c23;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw3924-input {
@@ -972,26 +966,25 @@ form {
 }
 .sw3924-label {
   grid-area: c24;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 
 
-/* Sight words 4th nine weeks */
+/* SIGHT WORDS - 4TH NINE WEEKS */
 
 .grid-form4 {
   display: grid;
   grid-template-areas: 
-  'd1 d2 d3'
-  'd4 d5 d6'
-  'd7 d8 d9'
-  'd10 d11 d12'
-  'd13 d14 d15'
-  'd16 d17 d18'
-  'd19 d20 d21';
-  grid-template-columns:1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto auto;
+  'd1 d2 d3 d4'
+  'd5 d6 d7 d8'
+  'd9 d10 d11 d12'
+  'd13 d14 d15 d16'
+  'd17 d18 d19 d20'
+  'd21 . . .';
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 .sw491-input {
   grid-area: d1;
@@ -1001,8 +994,8 @@ form {
 }
 .sw491-label {
   grid-area: d1;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw492-input {
@@ -1013,8 +1006,8 @@ form {
 }
 .sw492-label {
   grid-area: d2;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw493-input {
@@ -1025,8 +1018,8 @@ form {
 }
 .sw493-label {
   grid-area: d3;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw494-input {
@@ -1037,8 +1030,8 @@ form {
 }
 .sw494-label {
   grid-area: d4;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw495-input {
@@ -1049,8 +1042,8 @@ form {
 }
 .sw495-label {
   grid-area: d5;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw496-input {
@@ -1061,8 +1054,8 @@ form {
 }
 .sw496-label {
   grid-area: d6;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw497-input {
@@ -1073,8 +1066,8 @@ form {
 }
 .sw497-label {
   grid-area: d7;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw498-input {
@@ -1085,8 +1078,8 @@ form {
 }
 .sw498-label {
   grid-area: d8;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw499-input {
@@ -1097,8 +1090,8 @@ form {
 }
 .sw499-label {
   grid-area: d9;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4910-input {
@@ -1109,8 +1102,8 @@ form {
 }
 .sw4910-label {
   grid-area: d10;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4911-input {
@@ -1121,8 +1114,8 @@ form {
 }
 .sw4911-label {
   grid-area: d11;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4912-input {
@@ -1133,8 +1126,8 @@ form {
 }
 .sw4912-label {
   grid-area: d12;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4913-input {
@@ -1145,8 +1138,8 @@ form {
 }
 .sw4913-label {
   grid-area: d13;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4914-input {
@@ -1157,8 +1150,8 @@ form {
 }
 .sw4914-label {
   grid-area: d14;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4915-input {
@@ -1169,8 +1162,8 @@ form {
 }
 .sw4915-label {
   grid-area: d15;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4916-input {
@@ -1181,8 +1174,8 @@ form {
 }
 .sw4916-label {
   grid-area: d16;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4917-input {
@@ -1193,8 +1186,8 @@ form {
 }
 .sw4917-label {
   grid-area: d17;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4918-input {
@@ -1205,8 +1198,8 @@ form {
 }
 .sw4918-label {
   grid-area: d18;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4919-input {
@@ -1217,8 +1210,8 @@ form {
 }
 .sw4919-label {
   grid-area: d19;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4920-input {
@@ -1229,8 +1222,8 @@ form {
 }
 .sw4920-label {
   grid-area: d20;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
 .sw4921-input {
@@ -1241,7 +1234,7 @@ form {
 }
 .sw4921-label {
   grid-area: d21;
-  justify-self: end; /* horizontal */
-  padding: 5px;
+  
+  padding: 5px 0 5px 25px;
   align-self: center; /*vertical */
 }
