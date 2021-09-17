@@ -80,7 +80,7 @@
 .grid-form {
   display: grid;
   grid-template-areas: 
-  '. teacherlabel teacherinput .'
+  '. teacher-label teacher-input .'
   '. class-label class-input .'
   '. date-label date-input .'
   '. student-label student-input .';
@@ -89,14 +89,14 @@
 }
 
 .grid-teacher-label {
-  grid-area: teacherlabel;
+  grid-area: teacher-label;
   justify-self: end; /* horizontal */
   padding-right: 10px;
   align-self: center; /*vertical */
 }
 
 .grid-teacher-input {
-  grid-area: teacherinput;
+  grid-area: teacher-input;
   justify-self: start; /* horizontal */
   width: 65%;
   align-self: center; /*vertical */
@@ -192,21 +192,24 @@ form {
 .grid-form1 {
   display: grid;
   grid-template-areas: 
-  'a1 a2 a3 a4 a5 a6'
-  'a7 a8 a9 a10 a11 a12'
-  'a13 a14 a15 a16 a17 a18';
-  grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  'a1 a2 a3'
+  'a4 a5 a6'
+  'a7 a8 a9'
+  'a10 a11 a12'
+  'a13 a14 a15'
+  'a16 a17 a18';
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
 }
 .sw191-input {
   grid-area: a1;
-  /* justify-self: start; /* horizontal */
+  justify-self: start; /* horizontal */
   padding: 5px;
   align-self: center; /* vertical */
 }
 .sw191-label {
   grid-area: a1;
-  /*justify-self: start; /* horizontal */
+  justify-self: end; /* horizontal */
   padding: 5px;
   align-self: center; /*vertical */
 }
@@ -419,13 +422,13 @@ form {
 
 .sw291-input {
   grid-area: b1;
-  /* justify-self: start; /* horizontal */
+  justify-self: start; /* horizontal */
   padding: 5px;
   align-self: center; /* vertical */
 }
 .sw291-label {
   grid-area: b1;
-  /*justify-self: start; /* horizontal */
+  justify-self: end; /* horizontal */
   padding: 5px;
   align-self: center; /*vertical */
 }
@@ -685,6 +688,295 @@ form {
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto auto;
 }
+.sw391-input {
+  grid-area: c1;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /* vertical */
+}
+.sw391-label {
+  grid-area: c1;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw392-input {
+  grid-area: c2;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw392-label {
+  grid-area: c2;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw393-input {
+  grid-area: c3;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw393-label {
+  grid-area: c3;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw394-input {
+  grid-area: c4;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw394-label {
+  grid-area: c4;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.s395-input {
+  grid-area: c5;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw395-label {
+  grid-area: c5;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw396-input {
+  grid-area: c6;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw396-label {
+  grid-area: c6;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw397-input {
+  grid-area: c7;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw397-label {
+  grid-area: c7;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw398-input {
+  grid-area: c8;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw398-label {
+  grid-area: c8;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw399-input {
+  grid-area: c9;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw399-label {
+  grid-area: c9;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3910-input {
+  grid-area: c10;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3910-label {
+  grid-area: c10;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3911-input {
+  grid-area: c11;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3911-label {
+  grid-area: c11;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3912-input {
+  grid-area: c12;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3912-label {
+  grid-area: c12;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3913-input {
+  grid-area: c13;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3913-label {
+  grid-area: c13;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3914-input {
+  grid-area: c14;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3914-label {
+  grid-area: c14;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3915-input {
+  grid-area: c15;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3915-label {
+  grid-area: c15;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3916-input {
+  grid-area: c16;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3916-label {
+  grid-area: c16;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3917-input {
+  grid-area: c17;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3917-label {
+  grid-area: c17;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3918-input {
+  grid-area: c18;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3918-label {
+  grid-area: c18;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3919-input {
+  grid-area: c19;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3919-label {
+  grid-area: c19;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3920-input {
+  grid-area: c20;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3920-label {
+  grid-area: c20;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3921-input {
+  grid-area: c21;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3921-label {
+  grid-area: c21;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3922-input {
+  grid-area: c22;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3922-label {
+  grid-area: c22;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3923-input {
+  grid-area: c23;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3923-label {
+  grid-area: c23;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3924-input {
+  grid-area: c24;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw3924-label {
+  grid-area: c24;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+
 
 /* Sight words 4th nine weeks */
 
@@ -700,4 +992,256 @@ form {
   'd19 d20 d21';
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto auto;
+}
+.sw491-input {
+  grid-area: d1;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /* vertical */
+}
+.sw491-label {
+  grid-area: d1;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw492-input {
+  grid-area: d2;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw492-label {
+  grid-area: d2;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw493-input {
+  grid-area: d3;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw493-label {
+  grid-area: d3;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw494-input {
+  grid-area: d4;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw494-label {
+  grid-area: d4;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw495-input {
+  grid-area: d5;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw495-label {
+  grid-area: d5;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw496-input {
+  grid-area: d6;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw496-label {
+  grid-area: d6;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw497-input {
+  grid-area: d7;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw497-label {
+  grid-area: d7;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw498-input {
+  grid-area: d8;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw498-label {
+  grid-area: d8;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw499-input {
+  grid-area: d9;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw499-label {
+  grid-area: d9;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4910-input {
+  grid-area: d10;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4910-label {
+  grid-area: d10;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4911-input {
+  grid-area: d11;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4911-label {
+  grid-area: d11;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4912-input {
+  grid-area: d12;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4912-label {
+  grid-area: d12;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4913-input {
+  grid-area: d13;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4913-label {
+  grid-area: d13;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4914-input {
+  grid-area: d14;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4914-label {
+  grid-area: d14;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4915-input {
+  grid-area: d15;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4915-label {
+  grid-area: d15;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4916-input {
+  grid-area: d16;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4916-label {
+  grid-area: d16;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4917-input {
+  grid-area: d17;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4917-label {
+  grid-area: d17;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4918-input {
+  grid-area: d18;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4918-label {
+  grid-area: d18;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4919-input {
+  grid-area: d19;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4919-label {
+  grid-area: d19;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4920-input {
+  grid-area: d20;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4920-label {
+  grid-area: d20;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4921-input {
+  grid-area: d21;
+  justify-self: start; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
+}
+.sw4921-label {
+  grid-area: d21;
+  justify-self: end; /* horizontal */
+  padding: 5px;
+  align-self: center; /*vertical */
 }
