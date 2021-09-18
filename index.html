@@ -703,5 +703,21 @@
 </body>
 <script src=" main.js">
 </script>
+<script>
+  var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbzQ2wnhF_jy_y-8_gnXNj40_aIcXBszJiBUYEFIiDwbcflc1SxLFuAfvSkqSi_-PrHH/exec'
+
+  $('#submit-form').on('click', function (e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+      url: url,
+      method: "GET",
+      dataType: "json",
+      data: $form.serializeObject()
+    }).success(
+      // do something
+    );
+  })
+</script>
 
 </html>
