@@ -21,7 +21,7 @@
     <div class="general">
       <h1 class="grid-item">Student Assessment</h1>
 
-      <form class="grid-form" action="">
+      <form id="general-form" class="grid-form" action="">
 
         <label class="grid-teacher-label" for="teacher">Teacher</label>
         <input class="grid-teacher-input" type="text" name="teacher" id="teacher">
@@ -709,7 +709,7 @@
 </script>
 
 <script>
-  var $form = $('form#test-form'),
+  var $form = $('form#general-form'),
     url = 'https://script.google.com/macros/s/AKfycbzQ2wnhF_jy_y-8_gnXNj40_aIcXBszJiBUYEFIiDwbcflc1SxLFuAfvSkqSi_-PrHH/exec'
 
   $('#submit-form').on('click', function (e) {
