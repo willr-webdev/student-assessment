@@ -3,8 +3,7 @@
 }
 
 body {
-  color: green;
-  background-color: blue;
+  background-color: rgb(157, 199, 255);
 }
 
 /* Centers container, sets a maximum width and makes sure elements can flow past it*/
