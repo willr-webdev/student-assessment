@@ -2,6 +2,10 @@
   max-width: 1000px;
 }
 
+body {
+  background-color: blue;
+}
+
 /* Centers container, sets a maximum width and makes sure elements can flow past it*/
 
 .container {
@@ -13,7 +17,6 @@
 /* GRID */
 
 .grid-container {
-  background-color: rgb(211, 234, 255);
   border: 2px solid black;
   display: grid;
   grid-template-areas:
