@@ -52,6 +52,10 @@
   background-color: blue;
 }
 
+form-title {
+  color: cornsilk;
+}
+
 .heading1 {
   grid-area: heading1;
   background-color: rgb(175, 175, 175);
