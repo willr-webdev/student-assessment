@@ -19,6 +19,10 @@
   /* justify-content: center; */
   grid-template-areas:
     'general general general general'
+    '. date-label date-input .'
+    '. teacher-label teacher-input .'
+    '. class-label class-input .'
+    '. student-label student-input .'
     'heading1 heading2 heading3 heading4'
     'upperCase lowerCase sounds firstNine'
     'upperCase lowerCase sounds secondNine'
@@ -39,6 +43,30 @@
   color: cornsilk;
   background-color: blue;
   
+}
+.grid-date-label {
+  grid-area: date-label;
+}
+.grid-date-input {
+  grid-area: date-input;
+}
+.grid-teacher-label {
+  grid-area: teacher-label;
+}
+.grid-teacher-input {
+  grid-area: teacher-input;
+}
+.grid-class-label {
+  grid-area: class-label;
+}
+.grid-class-input {
+  grid-area: class-input;
+}
+.grid-student-label {
+  grid-area: student-label;
+}
+.grid-student-input {
+  grid-area: student-input;
 }
 .heading1 {
   grid-area: heading1;
