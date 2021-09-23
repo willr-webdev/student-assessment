@@ -19,17 +19,9 @@
   /* justify-content: center; */
   grid-template-areas:
     'general general general general'
-    '. . date-label date-input'
-    '. . teacher-label teacher-input'
-    '. . class-label class-input'
-    '. . student-label student-input'
-    'heading1 heading2 heading3 heading4'
-    'upperCase lowerCase sounds firstNine'
-    'upperCase lowerCase sounds secondNine'
-    'upperCase lowerCase sounds thirdNine'
-    'upperCase lowerCase sounds fourthNine';
-  grid-template-columns: 1fr 1fr 1fr 4fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    '. form form .';
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
 }
 
 .grid-item {
@@ -110,12 +102,17 @@
 
 .grid-form {
   display: grid;
-  grid-template-areas: 
-  '. teacher-label teacher-input .'
-  '. class-label class-input .'
-  '. date-label date-input .'
-  '. student-label student-input .';
-  grid-template-columns:1fr 1fr 1.5fr 1fr;
+  grid-template-areas:
+    '. . date-label date-input'
+    '. . teacher-label teacher-input'
+    '. . class-label class-input'
+    '. . student-label student-input'
+    'heading1 heading2 heading3 heading4'
+    'upperCase lowerCase sounds firstNine'
+    'upperCase lowerCase sounds secondNine'
+    'upperCase lowerCase sounds thirdNine'
+    'upperCase lowerCase sounds fourthNine';
+  grid-template-columns:1fr 1fr 1fr 3.5fr;
   grid-template-rows: auto auto auto auto;
 }
 
@@ -129,7 +126,7 @@
 .grid-teacher-input {
   grid-area: teacher-input;
   justify-self: start; /* horizontal */
-  width: 65%;
+  min-width: 100px;
   align-self: center; /*vertical */
 }
 
@@ -143,7 +140,7 @@
 .grid-class-input {
   grid-area: class-input;
   justify-self: start; /* horizontal */
-  width: 65%;
+  min-width: 100px;
   align-self: center; /*vertical */
 }
 
@@ -157,7 +154,7 @@
 .grid-date-input {
   grid-area: date-input;
   justify-self: start; /* horizontal */
-  width: 65%;
+  min-width: 100px;
   align-self: center; /*vertical */
 }
 
@@ -171,7 +168,7 @@
 .grid-student-input {
   grid-area: student-input;
   justify-self: start; /* horizontal */
-  width: 65%;
+  min-width: 100px;
   align-self: center; /*vertical */ 
 }
 
