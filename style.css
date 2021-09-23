@@ -13,15 +13,31 @@
 /* GRID */
 
 .grid-container {
-  background-color: rgb(229, 255, 0);
-  border: 2px solid black;
+  background-color: rgb(248, 248, 248);
+  /* border: 2px solid black; */
   display: grid;
-  /* justify-content: center; */
+  justify-content: center;
   grid-template-areas:
-    'general general general general'
-    '. form form .';
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
+    'general'
+    'form';
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.grid-form {
+  display: grid;
+  grid-template-areas:
+    '. . date-label date-input'
+    '. . teacher-label teacher-input'
+    '. . class-label class-input'
+    '. . student-label student-input'
+    'heading1 heading2 heading3 heading4'
+    'upperCase lowerCase sounds firstNine'
+    'upperCase lowerCase sounds secondNine'
+    'upperCase lowerCase sounds thirdNine'
+    'upperCase lowerCase sounds fourthNine';
+  grid-template-columns:1fr 1fr 1fr 4fr;
+  grid-template-rows: auto auto auto auto;
 }
 
 .grid-item {
@@ -34,32 +50,8 @@
   grid-area: general;
   color: cornsilk;
   background-color: blue;
-  
 }
-.grid-date-label {
-  grid-area: date-label;
-}
-.grid-date-input {
-  grid-area: date-input;
-}
-.grid-teacher-label {
-  grid-area: teacher-label;
-}
-.grid-teacher-input {
-  grid-area: teacher-input;
-}
-.grid-class-label {
-  grid-area: class-label;
-}
-.grid-class-input {
-  grid-area: class-input;
-}
-.grid-student-label {
-  grid-area: student-label;
-}
-.grid-student-input {
-  grid-area: student-input;
-}
+
 .heading1 {
   grid-area: heading1;
   background-color: rgb(175, 175, 175);
@@ -76,15 +68,20 @@
   grid-area: heading4;
   background-color: rgb(175, 175, 175);
 }
+
 .upperCase {
+  display: flex;
+  flex-direction: column;
   grid-area: upperCase;
 }
 .lowerCase {
   grid-area: lowerCase;
 }
+
 .sounds {
   grid-area: sounds;
 }
+
 .firstNine {
   grid-area: firstNine;
 }
@@ -98,77 +95,75 @@
   grid-area: fourthNine;
 }
 
-/* Top informational section */
-
-.grid-form {
-  display: grid;
-  grid-template-areas:
-    '. . date-label date-input'
-    '. . teacher-label teacher-input'
-    '. . class-label class-input'
-    '. . student-label student-input'
-    'heading1 heading2 heading3 heading4'
-    'upperCase lowerCase sounds firstNine'
-    'upperCase lowerCase sounds secondNine'
-    'upperCase lowerCase sounds thirdNine'
-    'upperCase lowerCase sounds fourthNine';
-  grid-template-columns:1fr 1fr 1fr 3.5fr;
-  grid-template-rows: auto auto auto auto;
+.ctr-form {
+  grid-area: form;
+  color: cornsilk;
+  background-color: orange;
 }
 
 .grid-teacher-label {
+  display: flex;
+  flex-basis: 100%;
   grid-area: teacher-label;
   justify-self: end; /* horizontal */
-  padding-right: 10px;
+  padding-right: 30px;
   align-self: center; /*vertical */
 }
 
 .grid-teacher-input {
+  display: flex;
+  flex-basis: 50%;
   grid-area: teacher-input;
-  justify-self: start; /* horizontal */
-  min-width: 100px;
+  justify-self: stretch; /*horizontal*/
+  margin-right: 200px;
   align-self: center; /*vertical */
 }
 
 .grid-class-label {
   grid-area: class-label;
   justify-self: end; /* horizontal */
-  padding-right: 10px;
+  padding-right: 30px;
   align-self: center; /*vertical */  
 }
 
 .grid-class-input {
+  display: flex;
+  flex-basis: 100%;
   grid-area: class-input;
-  justify-self: start; /* horizontal */
-  min-width: 100px;
+  justify-self: stretch; /* horizontal */
+  margin-right: 200px;
   align-self: center; /*vertical */
 }
 
 .grid-date-label {
   grid-area: date-label;
   justify-self: end; /* horizontal */
-  padding-right: 10px;
+  padding-right: 30px;
   align-self: center; /*vertical */
 }
 
 .grid-date-input {
+  display: flex;
+  flex-basis: 100%;
   grid-area: date-input;
-  justify-self: start; /* horizontal */
-  min-width: 100px;
+  justify-self: stretch;
+  margin-right: 200px;
   align-self: center; /*vertical */
 }
 
 .grid-student-label {
   grid-area: student-label;
   justify-self: end; /* horizontal */
-  padding-right: 10px;
+  padding-right: 30px;
   align-self: center; /*vertical */ 
 }
 
 .grid-student-input {
+  display: flex;
+  flex-basis: 100%;
   grid-area: student-input;
-  justify-self: start; /* horizontal */
-  min-width: 100px;
+  justify-self: stretch; /* horizontal */
+  margin-right: 200px;
   align-self: center; /*vertical */ 
 }
 
