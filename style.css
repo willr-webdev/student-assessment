@@ -1,21 +1,159 @@
-/* Wrapper full viewport */
-
-/* .wrapper {
-  min-height: 100vh;
-} */
-
-/* alignment */
-
-/* .ctr-content {
-  place-content: center;
+* {
+  margin: 0;
+  background-color: azure;
 }
-.ctr-items {
-  place-items: center;
-} */
-/* .ctr-text {
-  text-align: center;
-} */
-/* .ctr-element {
-  margin: 0 auto;
-} */
 
+.wrapper {
+  margin: 5px;
+  background-color: orange; 
+}
+
+.mstr-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr 4fr;
+}
+
+.title {
+  background-color: blue;
+  color: blanchedalmond;
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.date-label {
+  background-color: yellow;
+  grid-column: 5 / 7;
+}
+.date-input {
+  background-color: pink;
+  grid-column: 7 / 8;
+}
+
+.teacher-label {
+  background-color: red;
+  grid-column: 5 / 7;
+}
+.teacher-input {
+  background-color: gray;
+  grid-column: 7 / 8;
+}
+
+.class-label {
+  background-color: green;
+  grid-column: 5 / 7;
+}
+.class-input {
+  background-color: navajowhite;
+  grid-column: 7 / 8;
+}
+
+
+.student-label {
+  background-color: rgb(140, 0, 255);
+  grid-column: 5 / 7;
+}
+.student-input {
+  background-color: hotpink;
+  grid-column: 7 / 8;
+}
+
+
+.heading1 {
+  background-color: brown;
+  grid-column: 1 / 3;
+}
+.heading2 {
+  background-color: aqua;
+  grid-column: 3 / 5;
+}
+.heading3 {
+  background-color: thistle;
+  grid-column: 5 / 7;
+}
+.heading4 {
+  background-color: khaki;
+  grid-column: 7 / -1;
+}
+
+.uC1-input {
+  background-color: lavenderblush;
+  grid-column: 1 /2;
+  grid-row: 7 / 8;
+}
+.uC1-label {
+  background-color: lightsalmon;
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+}
+
+.uC2-input {
+  background-color: tan;
+  grid-column: 1 /2;
+}
+.uC2-label {
+  background-color: rgb(97, 158, 158);
+  grid-column: 2 / 3;
+}
+
+.uC3-input {
+  background-color: lavenderblush;
+  grid-column: 1 /2;
+}
+.uC3-label {
+  background-color: lightsalmon;
+  grid-column: 2 / 3;
+}
+
+.uC4-input {
+  background-color: tan;
+  grid-column: 1 /2;
+}
+.uC4-label {
+  background-color: rgb(97, 158, 158);
+  grid-column: 2 / 3;
+}
+
+
+.lC1-input {
+  background-color: lavenderblush;
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+}
+.lC1-label {
+  background-color: lightsalmon;
+  grid-column: 4 / 5;
+  grid-row: 7 / 8;
+}
+
+.lC2-input {
+  background-color: tan;
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+}
+.lC2-label {
+  background-color: rgb(97, 158, 158);
+  grid-column: 4 / 5;
+  grid-row: 8 / 9;
+}
+
+.lC3-input {
+  background-color: lavenderblush;
+  grid-column: 3 / 4;
+  grid-row: 9 / 10;
+}
+.lC3-label {
+  background-color: lightsalmon;
+  grid-column: 4 / 5;
+  grid-row: 9 / 10;
+}
+
+.lC4-input {
+  background-color: tan;
+  grid-column: 3 / 4;
+  grid-row: 10 / 11;
+}
+.lC4-label {
+  background-color: rgb(97, 158, 158);
+  grid-column: 4 / 5;
+  grid-row: 10 / 11;
+}
