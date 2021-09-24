@@ -1,11 +1,20 @@
 * {
   margin: 0;
-  background-color: azure;
+  max-width: 800px;
+}
+
+html {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
 }
 
 .wrapper {
-  margin: 5px;
-  background-color: orange; 
+  
+  background-color: orange;
 }
 
 .mstr-grid {
@@ -18,142 +27,219 @@
   color: blanchedalmond;
   grid-column: 1 / -1;
   text-align: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .date-label {
-  background-color: yellow;
+  text-align: right;
+  padding: 5px 15px 5px 0px;
   grid-column: 5 / 7;
 }
 .date-input {
-  background-color: pink;
+  padding-left: 15px;
   grid-column: 7 / 8;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .teacher-label {
-  background-color: red;
+  text-align: right;
+  padding: 5px 15px 5px 0px;
   grid-column: 5 / 7;
 }
 .teacher-input {
-  background-color: gray;
+  padding-left: 15px;
   grid-column: 7 / 8;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .class-label {
-  background-color: green;
+  text-align: right;
+  padding: 5px 15px 5px 0px;
   grid-column: 5 / 7;
 }
 .class-input {
-  background-color: navajowhite;
+  padding-left: 15px;
   grid-column: 7 / 8;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 
 .student-label {
-  background-color: rgb(140, 0, 255);
+  text-align: right;
+  padding: 5px 15px 5px 0px;
   grid-column: 5 / 7;
 }
 .student-input {
-  background-color: hotpink;
+  padding-left: 15px;
   grid-column: 7 / 8;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 
 .heading1 {
-  background-color: brown;
+  text-align: center;
+  margin-top: 5px;
+  padding: 15px 0px;
   grid-column: 1 / 3;
+  border-right: 1px solid blanchedalmond;
+  color: blanchedalmond;
+  background-color: blue;
 }
 .heading2 {
-  background-color: aqua;
+  text-align: center;
+  margin-top: 5px;
+  padding: 15px 0px;
   grid-column: 3 / 5;
+  border-right: 1px solid blanchedalmond;
+  color: blanchedalmond;
+  background-color: blue;
 }
 .heading3 {
-  background-color: thistle;
+  text-align: center;
+  margin-top: 5px;
+  padding: 15px 0px;
   grid-column: 5 / 7;
+  border-right: 1px solid blanchedalmond;
+  color: blanchedalmond;
+  background-color: blue;
 }
 .heading4 {
-  background-color: khaki;
+  text-align: center;
+  margin-top: 5px;
+  padding: 15px 0px;
   grid-column: 7 / -1;
+  color: blanchedalmond;
+  background-color: blue;
 }
 
 .uC1-input {
-  background-color: lavenderblush;
   grid-column: 1 /2;
   grid-row: 7 / 8;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .uC1-label {
-  background-color: lightsalmon;
   grid-column: 2 / 3;
   grid-row: 7 / 8;
+  text-align:left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 .uC2-input {
-  background-color: tan;
   grid-column: 1 /2;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .uC2-label {
-  background-color: rgb(97, 158, 158);
   grid-column: 2 / 3;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 .uC3-input {
-  background-color: lavenderblush;
   grid-column: 1 /2;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .uC3-label {
-  background-color: lightsalmon;
   grid-column: 2 / 3;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 .uC4-input {
-  background-color: tan;
   grid-column: 1 /2;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .uC4-label {
-  background-color: rgb(97, 158, 158);
   grid-column: 2 / 3;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 
 .lC1-input {
-  background-color: lavenderblush;
   grid-column: 3 / 4;
   grid-row: 7 / 8;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .lC1-label {
-  background-color: lightsalmon;
   grid-column: 4 / 5;
   grid-row: 7 / 8;
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 .lC2-input {
-  background-color: tan;
   grid-column: 3 / 4;
   grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .lC2-label {
-  background-color: rgb(97, 158, 158);
   grid-column: 4 / 5;
   grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 .lC3-input {
-  background-color: lavenderblush;
   grid-column: 3 / 4;
   grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .lC3-label {
-  background-color: lightsalmon;
   grid-column: 4 / 5;
   grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
 
 .lC4-input {
-  background-color: tan;
   grid-column: 3 / 4;
   grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
 }
 .lC4-label {
-  background-color: rgb(97, 158, 158);
   grid-column: 4 / 5;
   grid-row: 10 / 11;
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
 }
