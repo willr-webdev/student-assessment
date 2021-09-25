@@ -551,6 +551,59 @@ body {
   border-right: 1px solid blanchedalmond;
 }
 
+.uC27-label {
+  grid-column: 2 / 3;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC28-label {
+  grid-column: 2 / 3;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC29-label {
+  grid-column: 2 / 3;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC30-label {
+  grid-column: 2 / 3;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC31-label {
+  grid-column: 2 / 3;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC32-label {
+  grid-column: 2 / 3;
+  grid-row: 38 / 39;
+  text-align: left;
+  /* padding-top: 2px;
+  padding-left: 3px; */
+  border-right: 1px solid blanchedalmond;
+}
 
 
 /* LOWER CASE */
@@ -972,6 +1025,56 @@ body {
 }
 
 
+.lC27-label {
+  grid-column: 4 / 5;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC28-label {
+  grid-column: 4 / 5;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC29-label {
+  grid-column: 4 / 5;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC30-label {
+  grid-column: 4 / 5;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC31-label {
+  grid-column: 4 / 5;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC32-label {
+  grid-column: 4 / 5;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
 
 /* SOUNDS */
 
@@ -1038,8 +1141,6 @@ body {
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
-
-
 
 .sd5-input {
   grid-column: 5 / 6;
@@ -1393,7 +1494,6 @@ body {
   border-right: 1px solid blanchedalmond;
 }
 
-
 .sd27-input {
   grid-column: 5 / 6;
   grid-row: 33 / 34;
@@ -1443,6 +1543,30 @@ body {
   border-right: 1px solid blanchedalmond;
 }
 
+.sd30-label {
+  grid-column: 6 / 7;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.sd31-label {
+  grid-column: 6 / 7;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.sd32-label {
+  grid-column: 6 / 7;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
 
 
 /* SIGHT WORDS HEADINGS */
