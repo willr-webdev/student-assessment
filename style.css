@@ -147,7 +147,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 7 / 8;
   text-align:left;
-  padding-top: 6px;
+  padding-top: 9px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -161,6 +161,7 @@ body {
 }
 .uC2-label {
   grid-column: 2 / 3;
+  grid-row: 8 / 9;
   text-align: left;
   padding-top: 2px;
   padding-left: 3px;
@@ -176,6 +177,7 @@ body {
 }
 .uC3-label {
   grid-column: 2 / 3;
+  grid-row: 9 / 10;
   text-align: left;
   padding-top: 2px;
   padding-left: 3px;
