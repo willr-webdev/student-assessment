@@ -22,6 +22,11 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
 }
 
+label, input {
+  height: 21px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 
 
 /* TITLE */
@@ -42,11 +47,11 @@ body {
 
 .date-label {
   text-align: right;
-  padding: 5px 15px 5px 0px;
+  padding: 12px 15px 0px 0px;
   grid-column: 6 / 8;
 }
 .date-input {
-  padding-left: 15px;
+  padding-left: 5px;
   grid-column: 8 / 11;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -54,11 +59,11 @@ body {
 
 .teacher-label {
   text-align: right;
-  padding: 5px 15px 5px 0px;
+  padding: 12px 15px 0px 0px;
   grid-column: 6 / 8;
 }
 .teacher-input {
-  padding-left: 15px;
+  padding-left: 5px;
   grid-column: 8 / 11;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -66,11 +71,11 @@ body {
 
 .class-label {
   text-align: right;
-  padding: 5px 15px 5px 0px;
+  padding: 12px 15px 0px 0px;
   grid-column: 6 / 8;
 }
 .class-input {
-  padding-left: 15px;
+  padding-left: 5px;
   grid-column: 8 / 11;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -78,11 +83,11 @@ body {
 
 .student-label {
   text-align: right;
-  padding: 5px 15px 5px 0px;
+  padding: 12px 15px 0px 0px;
   grid-column: 6 / 8;
 }
 .student-input {
-  padding-left: 15px;
+  padding-left: 5px;
   grid-column: 8 / 11;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -142,12 +147,15 @@ body {
   justify-self: end;
   align-self: center;
   margin-right: 3px;
+  /* padding-top: 3px;
+  padding-bottom: 3px; */
 }
 .uC1-label {
   grid-column: 2 / 3;
   grid-row: 7 / 8;
   text-align:left;
-  padding-top: 9px;
+  align-self: center;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -163,7 +171,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -179,7 +187,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -194,7 +202,7 @@ body {
 .uC4-label {
   grid-column: 2 / 3;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -226,7 +234,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 12/ 13;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -242,7 +250,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 13/ 14;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -258,7 +266,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 14 / 15;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -290,7 +298,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 16/ 17;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -306,7 +314,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -322,7 +330,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 18/ 19;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -354,7 +362,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -370,7 +378,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 21/ 22;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -386,7 +394,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 22 / 23;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -418,7 +426,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -434,7 +442,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -450,7 +458,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -482,7 +490,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -498,7 +506,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 29 / 30;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -514,7 +522,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 30 / 31;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -530,7 +538,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 31 / 32;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -546,7 +554,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -555,7 +563,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 33 / 34;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -564,7 +572,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -573,7 +581,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 35 / 36;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -582,7 +590,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 36 / 37;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -591,7 +599,7 @@ body {
   grid-column: 2 / 3;
   grid-row: 37 / 38;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -600,8 +608,8 @@ body {
   grid-column: 2 / 3;
   grid-row: 38 / 39;
   text-align: left;
-  /* padding-top: 2px;
-  padding-left: 3px; */
+  padding-top: 6px;
+  padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
 
@@ -635,7 +643,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -651,7 +659,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -667,7 +675,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 10 / 11;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -699,7 +707,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 12/ 13;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -715,7 +723,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 13/ 14;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -731,7 +739,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 14 / 15;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -763,7 +771,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 16/ 17;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -779,7 +787,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -795,7 +803,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 18/ 19;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -827,7 +835,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -843,7 +851,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 21/ 22;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -859,7 +867,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 22 / 23;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -891,7 +899,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -907,7 +915,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -923,7 +931,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -955,7 +963,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -971,7 +979,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 29 / 30;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -987,7 +995,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 30 / 31;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1003,7 +1011,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 31 / 32;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1019,7 +1027,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1037,7 +1045,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1045,7 +1053,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 35 / 36;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1053,7 +1061,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 36 / 37;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1061,7 +1069,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 37 / 38;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1069,7 +1077,7 @@ body {
   grid-column: 4 / 5;
   grid-row: 38 / 39;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1105,7 +1113,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1121,7 +1129,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1137,7 +1145,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 10 / 11;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1169,7 +1177,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 12/ 13;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1185,7 +1193,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 13/ 14;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1201,7 +1209,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 14 / 15;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1233,7 +1241,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 16/ 17;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1249,7 +1257,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1265,7 +1273,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 18/ 19;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1297,7 +1305,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1313,7 +1321,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 21/ 22;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1329,7 +1337,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 22 / 23;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1361,7 +1369,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1377,7 +1385,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1393,7 +1401,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1425,7 +1433,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1441,7 +1449,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 29 / 30;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1457,7 +1465,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 30 / 31;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1473,7 +1481,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 31 / 32;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1489,7 +1497,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1505,7 +1513,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 33 / 34;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1521,8 +1529,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 2px;
-
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1538,7 +1545,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 35 / 36;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1547,7 +1554,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 36 / 37;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1555,7 +1562,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 37 / 38;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1563,7 +1570,7 @@ body {
   grid-column: 6 / 7;
   grid-row: 38 / 39;
   text-align: left;
-  padding-top: 2px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1574,9 +1581,10 @@ body {
 .first9-heading {
   grid-column: 7 / -1;
   grid-row: 7 / 8;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   padding-top: 3px;
   padding-bottom: 3px;
+  height: 18px;
   text-align: center;
   background-color: rgb(255, 255, 255);
 }
@@ -1584,8 +1592,9 @@ body {
 .second9-heading {
   grid-column: 7 / -1;
   grid-row: 15 / 16;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
   text-align: center;
@@ -1595,8 +1604,9 @@ body {
 .third9-heading {
   grid-column: 7 / -1;
   grid-row: 23 / 24;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
   text-align: center;
@@ -1606,8 +1616,9 @@ body {
 .fourth9-heading {
   grid-column: 7 / -1;
   grid-row: 31 / 32;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
   text-align: center;
@@ -1629,7 +1640,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1645,7 +1656,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1661,7 +1672,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 10 / 11;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1677,7 +1688,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 11 / 12;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1693,7 +1704,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 12 / 13;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1709,7 +1720,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 13 / 14;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1725,7 +1736,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 14 / 15;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1741,7 +1752,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1757,7 +1768,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1773,7 +1784,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 10 / 11;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1789,7 +1800,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 11 / 12;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1805,7 +1816,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 12 / 13;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1821,7 +1832,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 13 / 14;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1837,7 +1848,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 14 / 15;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1853,7 +1864,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1869,7 +1880,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1885,7 +1896,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 10 / 11;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1901,7 +1912,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 11 / 12;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1917,7 +1928,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 12 / 13;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1933,7 +1944,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 13 / 14;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1949,7 +1960,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 14 / 15;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1965,7 +1976,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 8 / 9;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1981,7 +1992,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 9 / 10;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -1997,7 +2008,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 11 / 12;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2017,7 +2028,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 16 / 17;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2033,7 +2044,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2049,7 +2060,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 18 / 19;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2065,7 +2076,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 19 / 20;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2081,7 +2092,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2097,7 +2108,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 21 / 22;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2113,7 +2124,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 22 / 23;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2129,7 +2140,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 16 / 17;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2145,7 +2156,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2161,7 +2172,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 18 / 19;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2177,7 +2188,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 19 / 20;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2193,7 +2204,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2209,7 +2220,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 21 / 22;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2225,7 +2236,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 22 / 23;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2241,7 +2252,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 16 / 17;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2257,7 +2268,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2273,7 +2284,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 18 / 19;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2289,7 +2300,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 19 / 20;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2305,7 +2316,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2321,7 +2332,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 21 / 22;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2337,7 +2348,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 22 / 23;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2353,7 +2364,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 16 / 17;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2369,7 +2380,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 17 / 18;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2385,7 +2396,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 18 / 19;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2401,7 +2412,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 19 / 20;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2417,7 +2428,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 20 / 21;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2437,7 +2448,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2453,7 +2464,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2469,7 +2480,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2485,7 +2496,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 27 / 28;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2501,7 +2512,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2517,7 +2528,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 29 / 30;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2533,7 +2544,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 30 / 31;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2549,7 +2560,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2565,7 +2576,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2581,7 +2592,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2597,7 +2608,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 27 / 28;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2613,7 +2624,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2629,7 +2640,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 29 / 30;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2645,7 +2656,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 30 / 31;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2661,7 +2672,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2677,7 +2688,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2693,7 +2704,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2709,7 +2720,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 27 / 28;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2725,7 +2736,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2741,7 +2752,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 29 / 30;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2757,7 +2768,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 30 / 31;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2773,7 +2784,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 24 / 25;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2789,7 +2800,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 25 / 26;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2805,7 +2816,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 26 / 27;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2821,7 +2832,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 27 / 28;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2837,7 +2848,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 28 / 29;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2857,7 +2868,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2873,7 +2884,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 33 / 34;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2889,7 +2900,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2905,7 +2916,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 35 / 36;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2921,7 +2932,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 36 / 37;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2937,7 +2948,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 37 / 38;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2953,7 +2964,7 @@ body {
   grid-column: 8 / 9;
   grid-row: 38 / 39;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2969,7 +2980,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -2985,7 +2996,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 33 / 34;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3001,7 +3012,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3017,7 +3028,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 35 / 36;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3033,7 +3044,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 36 / 37;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3049,7 +3060,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 37 / 38;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3065,7 +3076,7 @@ body {
   grid-column: 10 / 11;
   grid-row: 38 / 39;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3081,7 +3092,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3097,7 +3108,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 33 / 34;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3113,7 +3124,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3129,7 +3140,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 35 / 36;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3145,7 +3156,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 36 / 37;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3161,7 +3172,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 37 / 38;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3177,7 +3188,7 @@ body {
   grid-column: 12 / 13;
   grid-row: 38 / 39;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3193,7 +3204,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 32 / 33;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3209,7 +3220,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 33 / 34;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
@@ -3225,7 +3236,7 @@ body {
   grid-column: 14 / 15;
   grid-row: 34 / 35;
   text-align: left;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 }
