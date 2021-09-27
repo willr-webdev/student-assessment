@@ -1,13 +1,13 @@
-/* MOBILE-FIRST */
+/* ********** MOBILE-FIRST ********** */
 
 * {
   margin: 0;
-  max-width: 800px;
+  max-width: 1000px;
 }
 
 html {
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 body {
@@ -20,23 +20,35 @@ body {
   grid-row: 2 / 6;
 } */
 
-label, input {
+/* label, input {
   height: 21px;
   padding-top: 3px;
   padding-bottom: 3px;
+} */
+
+.r-pad-10 {
+  padding-right: 10px;
 }
+
+/* ********** WRAPPER ********** */
 
 .wrapper {
   padding-bottom: 15px;
   background-color: orange;
 }
 
+
+
+/* ********** GRID ********** */
+
 .mstr-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(min-content, 1fr));
+  grid-auto-flow: column;
+  grid-template-columns: auto;
 }
 
 
+/* ********** TEXT ********** */
 
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -48,12 +60,12 @@ h3 {
   font-weight: 200;
 }
 
-/* TITLE */
+/* ********** TITLE ********** */
 
 .title {
   background-color: blue;
   color: blanchedalmond;
-  grid-column: 1 / -1;
+  /* grid-column: 1 / -1; */
   text-align: center;
   margin-bottom: 5px;
   padding-top: 5px;
@@ -62,7 +74,7 @@ h3 {
 
 
 
-/* GENERAL */
+/* ********** GENERAL ********** */
 
 /* .date-label {
   text-align: right;
@@ -114,51 +126,23 @@ h3 {
 
 
 
-/* HEADINGS */
+/* ********** HEADING ********** */
 
-/* .heading1 {
-  min-width: 60px;
+  .heading {
+  /* min-width: 60px; */
   text-align: center;
-  margin-top: 5px;
-  padding: 15px 0px;
-  grid-column: 1 / 3;
-  border-right: 1px solid blanchedalmond;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 3px 0px;
+  /* grid-column: 1 / 3; */
+  /* border-right: 1px solid blanchedalmond; */
   color: blanchedalmond;
   background-color: blue;
 }
-.heading2 {
-  min-width: 60px;
-  text-align: center;
-  margin-top: 5px;
-  padding: 15px 0px;
-  grid-column: 3 / 5;
-  border-right: 1px solid blanchedalmond;
-  color: blanchedalmond;
-  background-color: blue;
-}
-.heading3 {
-  min-width: 60px;
-  text-align: center;
-  margin-top: 5px;
-  padding: 25px 0px 0px 0px;
-  grid-column: 5 / 7;
-  border-right: 1px solid blanchedalmond;
-  color: blanchedalmond;
-  background-color: blue;
-}
-.heading4 {
-  min-width: 360px;
-  text-align: center;
-  margin-top: 5px;
-  padding: 25px 0px 0px 0px;
-  grid-column: 7 / -1;
-  color: blanchedalmond;
-  background-color: blue;
-} */
 
 
 
-/* UPPER CASE */
+/* ********** UPPER CASE ********** */
 
 /* .uC1-input {
   grid-column: 1 /2;
@@ -631,7 +615,7 @@ h3 {
 } */
 
 
-/* LOWER CASE */
+/* ********** LOWER CASE ********** */
 
 /* .lC1-input {
   grid-column: 3 / 4;
@@ -1101,7 +1085,7 @@ h3 {
 
 
 
-/* SOUNDS */
+/* ********** SOUNDS ********** */
 
 /* .sd1-input {
   grid-column: 5 / 6;
@@ -1593,7 +1577,7 @@ h3 {
 } */
 
 
-/* SIGHT WORDS HEADINGS */
+/* ********** SIGHT WORDS HEADINGS ********** */
 
 /* .first9-heading {
   grid-column: 7 / -1;
@@ -1637,7 +1621,7 @@ h3 {
 
 
 
-/* SIGHT WORDS - FIRST 9 WEEKS */
+/* ********** SIGHT WORDS - FIRST 9 WEEKS ********** */
 
 /* .sw191-input {
   grid-column: 7 / 8;
@@ -2025,7 +2009,7 @@ h3 {
 
 
 
-/* SIGHT WORDS - SECOND 9 WEEKS */
+/* ********** SIGHT WORDS - SECOND 9 WEEKS ********** */
 
 /* .sw291-input {
   grid-column: 7 / 8;
@@ -2445,7 +2429,7 @@ h3 {
 
 
 
-/* SIGHT WORDS - THIRD 9 WEEKS */
+/* ********** SIGHT WORDS - THIRD 9 WEEKS ********** */
 
 /* .sw391-input {
   grid-column: 7 / 8;
@@ -2865,7 +2849,7 @@ h3 {
 
 
 
-/* SIGHT WORDS - FOURTH 9 WEEKS */
+/* ********** SIGHT WORDS - FOURTH 9 WEEKS ********** */
 
 /* .sw491-input {
   grid-column: 7 / 8;
