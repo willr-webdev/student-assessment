@@ -30,6 +30,10 @@ p {
   padding-left: 10px;
 }
 
+.inline {
+  display: inline;
+}
+
 /* ********** WRAPPER ********** */
 
 .wrapper {
