@@ -14,11 +14,11 @@ body {
   background-color: rgb(236, 236, 236);
 }
 
-img{
+/* img{
   display: flex;
   grid-column: 12 / 14;
   grid-row: 2 / 6;
-}
+} */
 
 label, input {
   height: 21px;
@@ -33,7 +33,7 @@ label, input {
 
 .mstr-grid {
   display: grid;
-  grid-template-columns: repeat(6, minmax(min-content, 1fr)) 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+  grid-template-columns: repeat(6, minmax(min-content, 1fr));
 }
 
 
@@ -64,7 +64,7 @@ h3 {
 
 /* GENERAL */
 
-.date-label {
+/* .date-label {
   text-align: right;
   padding: 12px 15px 0px 0px;
   grid-column: 6 / 8;
@@ -110,13 +110,13 @@ h3 {
   grid-column: 8 / 11;
   margin-top: 5px;
   margin-bottom: 5px;
-}
+} */
 
 
 
 /* HEADINGS */
 
-.heading1 {
+/* .heading1 {
   min-width: 60px;
   text-align: center;
   margin-top: 5px;
@@ -154,20 +154,18 @@ h3 {
   grid-column: 7 / -1;
   color: blanchedalmond;
   background-color: blue;
-}
+} */
 
 
 
 /* UPPER CASE */
 
-.uC1-input {
+/* .uC1-input {
   grid-column: 1 /2;
   grid-row: 7 / 8;
   justify-self: end;
   align-self: center;
   margin-right: 3px;
-  /* padding-top: 3px;
-  padding-bottom: 3px; */
 }
 .uC1-label {
   grid-column: 2 / 3;
@@ -630,12 +628,12 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
 
 
 /* LOWER CASE */
 
-.lC1-input {
+/* .lC1-input {
   grid-column: 3 / 4;
   grid-row: 7 / 8;
   justify-self: end;
@@ -1099,13 +1097,13 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
 
 
 
 /* SOUNDS */
 
-.sd1-input {
+/* .sd1-input {
   grid-column: 5 / 6;
   grid-row: 7 / 8;
   justify-self: end;
@@ -1592,15 +1590,14 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
 
 
 /* SIGHT WORDS HEADINGS */
 
-.first9-heading {
+/* .first9-heading {
   grid-column: 7 / -1;
   grid-row: 7 / 8;
-  /* margin-bottom: 10px; */
   padding-top: 3px;
   padding-bottom: 3px;
   height: 18px;
@@ -1611,8 +1608,6 @@ h3 {
 .second9-heading {
   grid-column: 7 / -1;
   grid-row: 15 / 16;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
   height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1623,8 +1618,6 @@ h3 {
 .third9-heading {
   grid-column: 7 / -1;
   grid-row: 23 / 24;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
   height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
@@ -1635,20 +1628,18 @@ h3 {
 .fourth9-heading {
   grid-column: 7 / -1;
   grid-row: 31 / 32;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
   height: 18px;
   padding-top: 3px;
   padding-bottom: 3px;
   text-align: center;
   background-color: rgb(255, 255, 255);
-}
+} */
 
 
 
 /* SIGHT WORDS - FIRST 9 WEEKS */
 
-.sw191-input {
+/* .sw191-input {
   grid-column: 7 / 8;
   grid-row: 8 / 9;
   justify-self: end;
@@ -2030,13 +2021,13 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
 
 
 
 /* SIGHT WORDS - SECOND 9 WEEKS */
 
-.sw291-input {
+/* .sw291-input {
   grid-column: 7 / 8;
   grid-row: 16 / 17;
   justify-self: end;
@@ -2450,13 +2441,13 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
 
 
 
 /* SIGHT WORDS - THIRD 9 WEEKS */
 
-.sw391-input {
+/* .sw391-input {
   grid-column: 7 / 8;
   grid-row: 24 / 25;
   justify-self: end;
@@ -2870,13 +2861,13 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
 
 
 
 /* SIGHT WORDS - FOURTH 9 WEEKS */
 
-.sw491-input {
+/* .sw491-input {
   grid-column: 7 / 8;
   grid-row: 32 / 33;
   justify-self: end;
@@ -3258,4 +3249,4 @@ h3 {
   padding-top: 6px;
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
-}
+} */
