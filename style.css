@@ -1,5 +1,9 @@
 /* ********** MOBILE-FIRST ********** */
 
+:root {
+  --primary-blue: blue;
+}
+
 * {
   margin: 0;
   max-width: 1000px;
@@ -3223,3 +3227,20 @@ h3 {
   padding-left: 3px;
   border-right: 1px solid blanchedalmond;
 } */
+
+button {
+  display: block;
+  margin: 10px auto;
+  width: 50%;
+  font-size: 1.3em;
+  font-weight: 600;
+  border-radius: .5em;
+  color: var(--primary-blue);
+  border: .2em solid var(--primary-blue);
+}
+
+button:hover {
+  background-color: var(--primary-blue);
+  color:blanchedalmond;
+  border: .2em solid var(--primary-blue);
+}
