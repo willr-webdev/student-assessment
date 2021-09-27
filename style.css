@@ -14,20 +14,22 @@ body {
   background-color: rgb(236, 236, 236);
 }
 
-/* img{
-  display: flex;
-  grid-column: 12 / 14;
-  grid-row: 2 / 6;
-} */
 
-/* label, input {
-  height: 21px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-} */
+
+.l-pad-15 {
+  padding-left: 15px;
+}
+.r-pad-15 {
+  padding-right: 15px;
+}
 
 .r-pad-10 {
   padding-right: 10px;
+}
+
+p {
+  display: inline;
+  padding-left: 10px;
 }
 
 /* ********** WRAPPER ********** */
@@ -62,80 +64,65 @@ h3 {
 
 /* ********** TITLE ********** */
 
+.mascot-title {
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .title {
   background-color: blue;
   color: blanchedalmond;
-  /* grid-column: 1 / -1; */
-  text-align: center;
-  margin-bottom: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-left: 10px;
 }
 
 
 
-/* ********** GENERAL ********** */
+/* ******* GENERAL SECTION ******* */
 
-/* .date-label {
-  text-align: right;
-  padding: 12px 15px 0px 0px;
-  grid-column: 6 / 8;
-}
-.date-input {
-  padding-left: 5px;
-  grid-column: 8 / 11;
+.gen-label {
+  padding: 5px 20px 5px 5px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-.teacher-label {
-  text-align: right;
-  padding: 12px 15px 0px 0px;
-  grid-column: 6 / 8;
-}
-.teacher-input {
+.gen-input {
+  display: flex;
+  width: 50%;
   padding-left: 5px;
-  grid-column: 8 / 11;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.no-l-pad {
+  padding-left: 0px;
+}
+
+
+/* ******* FORM LABEL & INPUT ******* */
+
+.label {
+  padding: 5px 20px 5px 15px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-.class-label {
-  text-align: right;
-  padding: 12px 15px 0px 0px;
-  grid-column: 6 / 8;
-}
-.class-input {
+.input {
+  width: 50%;
   padding-left: 5px;
-  grid-column: 8 / 11;
   margin-top: 5px;
   margin-bottom: 5px;
+  margin-left: 5px;
 }
-
-.student-label {
-  text-align: right;
-  padding: 12px 15px 0px 0px;
-  grid-column: 6 / 8;
-}
-.student-input {
-  padding-left: 5px;
-  grid-column: 8 / 11;
-  margin-top: 5px;
-  margin-bottom: 5px;
-} */
 
 
 
 /* ********** HEADING ********** */
 
   .heading {
-  /* min-width: 60px; */
   text-align: center;
   margin-top: 20px;
   margin-bottom: 5px;
   padding: 3px 0px;
-  /* grid-column: 1 / 3; */
-  /* border-right: 1px solid blanchedalmond; */
   color: blanchedalmond;
   background-color: blue;
 }
