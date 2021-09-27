@@ -3236,6 +3236,7 @@ button {
   font-weight: 600;
   border-radius: .5em;
   color: var(--primary-blue);
+  background-color:blanchedalmond;
   border: .2em solid var(--primary-blue);
 }
 
