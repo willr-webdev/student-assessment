@@ -1,0 +1,3259 @@
+* {
+  margin: 0;
+  max-width: 800px;
+}
+
+html {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: rgb(236, 236, 236);
+}
+
+img{
+  display: flex;
+  grid-column: 12 / 14;
+  grid-row: 2 / 6;
+}
+
+label, input {
+  height: 21px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.wrapper {
+  padding-bottom: 15px;
+  background-color: orange;
+}
+
+.mstr-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(min-content, 1fr)) 1fr 2fr 1fr 2fr 1fr 2fr 1fr 2fr;
+}
+
+
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 200;
+}
+
+/* TITLE */
+
+.title {
+  background-color: blue;
+  color: blanchedalmond;
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+
+/* GENERAL */
+
+.date-label {
+  text-align: right;
+  padding: 12px 15px 0px 0px;
+  grid-column: 6 / 8;
+}
+.date-input {
+  padding-left: 5px;
+  grid-column: 8 / 11;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.teacher-label {
+  text-align: right;
+  padding: 12px 15px 0px 0px;
+  grid-column: 6 / 8;
+}
+.teacher-input {
+  padding-left: 5px;
+  grid-column: 8 / 11;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.class-label {
+  text-align: right;
+  padding: 12px 15px 0px 0px;
+  grid-column: 6 / 8;
+}
+.class-input {
+  padding-left: 5px;
+  grid-column: 8 / 11;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.student-label {
+  text-align: right;
+  padding: 12px 15px 0px 0px;
+  grid-column: 6 / 8;
+}
+.student-input {
+  padding-left: 5px;
+  grid-column: 8 / 11;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+
+/* HEADINGS */
+
+.heading1 {
+  min-width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 15px 0px;
+  grid-column: 1 / 3;
+  border-right: 1px solid blanchedalmond;
+  color: blanchedalmond;
+  background-color: blue;
+}
+.heading2 {
+  min-width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 15px 0px;
+  grid-column: 3 / 5;
+  border-right: 1px solid blanchedalmond;
+  color: blanchedalmond;
+  background-color: blue;
+}
+.heading3 {
+  min-width: 60px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 25px 0px 0px 0px;
+  grid-column: 5 / 7;
+  border-right: 1px solid blanchedalmond;
+  color: blanchedalmond;
+  background-color: blue;
+}
+.heading4 {
+  min-width: 360px;
+  text-align: center;
+  margin-top: 5px;
+  padding: 25px 0px 0px 0px;
+  grid-column: 7 / -1;
+  color: blanchedalmond;
+  background-color: blue;
+}
+
+
+
+/* UPPER CASE */
+
+.uC1-input {
+  grid-column: 1 /2;
+  grid-row: 7 / 8;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+  /* padding-top: 3px;
+  padding-bottom: 3px; */
+}
+.uC1-label {
+  grid-column: 2 / 3;
+  grid-row: 7 / 8;
+  text-align:left;
+  align-self: center;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC2-input {
+  grid-column: 1 /2;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC2-label {
+  grid-column: 2 / 3;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC3-input {
+  grid-column: 1 /2;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC3-label {
+  grid-column: 2 / 3;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC4-input {
+  grid-column: 1 /2;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC4-label {
+  grid-column: 2 / 3;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC5-input {
+  grid-column: 1 /2;
+  grid-row: 11/ 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC5-label {
+  grid-column: 2 / 3;
+  grid-row: 11/ 12;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC6-input {
+  grid-column: 1 /2;
+  grid-row: 12/ 13;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC6-label {
+  grid-column: 2 / 3;
+  grid-row: 12/ 13;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC7-input {
+  grid-column: 1 / 2;
+  grid-row: 13 / 14;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC7-label {
+  grid-column: 2 / 3;
+  grid-row: 13/ 14;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC8-input {
+  grid-column: 1 / 2;
+  grid-row: 14 / 15;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC8-label {
+  grid-column: 2 / 3;
+  grid-row: 14 / 15;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC9-input {
+  grid-column: 1 / 2;
+  grid-row: 15 / 16;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC9-label {
+  grid-column: 2 / 3;
+  grid-row: 15 / 16;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC10-input {
+  grid-column: 1 / 2;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC10-label {
+  grid-column: 2 / 3;
+  grid-row: 16/ 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC11-input {
+  grid-column: 1 / 2;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC11-label {
+  grid-column: 2 / 3;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC12-input {
+  grid-column: 1 / 2;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC12-label {
+  grid-column: 2 / 3;
+  grid-row: 18/ 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC13-input {
+  grid-column: 1 / 2;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC13-label {
+  grid-column: 2 / 3;
+  grid-row: 19 / 20;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC14-input {
+  grid-column: 1 / 2;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC14-label {
+  grid-column: 2 / 3;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC15-input {
+  grid-column: 1 / 2;
+  grid-row: 21 / 22;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC15-label {
+  grid-column: 2 / 3;
+  grid-row: 21/ 22;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC16-input {
+  grid-column: 1 / 2;
+  grid-row: 22 / 23;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC16-label {
+  grid-column: 2 / 3;
+  grid-row: 22 / 23;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC17-input {
+  grid-column: 1 / 2;
+  grid-row: 23 / 24;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC17-label {
+  grid-column: 2 / 3;
+  grid-row: 23 / 24;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC18-input {
+  grid-column: 1 / 2;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC18-label {
+  grid-column: 2 / 3;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC19-input {
+  grid-column: 1 / 2;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC19-label {
+  grid-column: 2 / 3;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC20-input {
+  grid-column: 1 / 2;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC20-label {
+  grid-column: 2 / 3;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC21-input {
+  grid-column: 1 / 2;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC21-label {
+  grid-column: 2 / 3;
+  grid-row: 27 / 28;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC22-input {
+  grid-column: 1 / 2;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC22-label {
+  grid-column: 2 / 3;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC23-input {
+  grid-column: 1 / 2;
+  grid-row: 29 / 30;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC23-label {
+  grid-column: 2 / 3;
+  grid-row: 29 / 30;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC24-input {
+  grid-column: 1 / 2;
+  grid-row: 30 / 31;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC24-label {
+  grid-column: 2 / 3;
+  grid-row: 30 / 31;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC25-input {
+  grid-column: 1 / 2;
+  grid-row: 31 / 32;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC25-label {
+  grid-column: 2 / 3;
+  grid-row: 31 / 32;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC26-input {
+  grid-column: 1 / 2;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.uC26-label {
+  grid-column: 2 / 3;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC27-label {
+  grid-column: 2 / 3;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC28-label {
+  grid-column: 2 / 3;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC29-label {
+  grid-column: 2 / 3;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC30-label {
+  grid-column: 2 / 3;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC31-label {
+  grid-column: 2 / 3;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.uC32-label {
+  grid-column: 2 / 3;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+/* LOWER CASE */
+
+.lC1-input {
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC1-label {
+  grid-column: 4 / 5;
+  grid-row: 7 / 8;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC2-input {
+  grid-column: 3 / 4;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC2-label {
+  grid-column: 4 / 5;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC3-input {
+  grid-column: 3 / 4;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC3-label {
+  grid-column: 4 / 5;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC4-input {
+  grid-column: 3 / 4;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC4-label {
+  grid-column: 4 / 5;
+  grid-row: 10 / 11;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC5-input {
+  grid-column: 3 / 4;
+  grid-row: 11/ 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC5-label {
+  grid-column: 4 / 5;
+  grid-row: 11/ 12;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC6-input {
+  grid-column: 3 / 4;
+  grid-row: 12/ 13;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC6-label {
+  grid-column: 4 / 5;
+  grid-row: 12/ 13;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC7-input {
+  grid-column: 3 / 4;
+  grid-row: 13 / 14;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC7-label {
+  grid-column: 4 / 5;
+  grid-row: 13/ 14;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC8-input {
+  grid-column: 3 / 4;
+  grid-row: 14 / 15;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC8-label {
+  grid-column: 4 / 5;
+  grid-row: 14 / 15;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC9-input {
+  grid-column: 3 / 4;
+  grid-row: 15 / 16;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC9-label {
+  grid-column: 4 / 5;
+  grid-row: 15 / 16;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC10-input {
+  grid-column: 3 / 4;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC10-label {
+  grid-column: 4 / 5;
+  grid-row: 16/ 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC11-input {
+  grid-column: 3 / 4;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC11-label {
+  grid-column: 4 / 5;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC12-input {
+  grid-column: 3 / 4;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC12-label {
+  grid-column: 4 / 5;
+  grid-row: 18/ 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC13-input {
+  grid-column: 3 / 4;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC13-label {
+  grid-column: 4 / 5;
+  grid-row: 19 / 20;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC14-input {
+  grid-column: 3 / 4;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC14-label {
+  grid-column: 4 / 5;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC15-input {
+  grid-column: 3 / 4;
+  grid-row: 21 / 22;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC15-label {
+  grid-column: 4 / 5;
+  grid-row: 21/ 22;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC16-input {
+  grid-column: 3 / 4;
+  grid-row: 22 / 23;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC16-label {
+  grid-column: 4 / 5;
+  grid-row: 22 / 23;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC17-input {
+  grid-column: 3 / 4;
+  grid-row: 23 / 24;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC17-label {
+  grid-column: 4 / 5;
+  grid-row: 23 / 24;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC18-input {
+  grid-column: 3 / 4;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC18-label {
+  grid-column: 4 / 5;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC19-input {
+  grid-column: 3 / 4;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC19-label {
+  grid-column: 4 / 5;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC20-input {
+  grid-column: 3 / 4;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC20-label {
+  grid-column: 4 / 5;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC21-input {
+  grid-column: 3 / 4;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC21-label {
+  grid-column: 4 / 5;
+  grid-row: 27 / 28;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC22-input {
+  grid-column: 3 / 4;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC22-label {
+  grid-column: 4 / 5;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC23-input {
+  grid-column: 3 / 4;
+  grid-row: 29 / 30;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC23-label {
+  grid-column: 4 / 5;
+  grid-row: 29 / 30;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC24-input {
+  grid-column: 3 / 4;
+  grid-row: 30 / 31;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC24-label {
+  grid-column: 4 / 5;
+  grid-row: 30 / 31;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC25-input {
+  grid-column: 3 / 4;
+  grid-row: 31 / 32;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC25-label {
+  grid-column: 4 / 5;
+  grid-row: 31 / 32;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.lC26-input {
+  grid-column: 3 / 4;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.lC26-label {
+  grid-column: 4 / 5;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+.lC27-label {
+  grid-column: 4 / 5;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 2px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC28-label {
+  grid-column: 4 / 5;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC29-label {
+  grid-column: 4 / 5;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC30-label {
+  grid-column: 4 / 5;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC31-label {
+  grid-column: 4 / 5;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.lC32-label {
+  grid-column: 4 / 5;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+
+/* SOUNDS */
+
+.sd1-input {
+  grid-column: 5 / 6;
+  grid-row: 7 / 8;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd1-label {
+  grid-column: 6 / 7;
+  grid-row: 7 / 8;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd2-input {
+  grid-column: 5 / 6;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd2-label {
+  grid-column: 6 / 7;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd3-input {
+  grid-column: 5 / 6;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd3-label {
+  grid-column: 6 / 7;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd4-input {
+  grid-column: 5 / 6;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd4-label {
+  grid-column: 6 / 7;
+  grid-row: 10 / 11;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd5-input {
+  grid-column: 5 / 6;
+  grid-row: 11/ 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd5-label {
+  grid-column: 6 / 7;
+  grid-row: 11/ 12;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd6-input {
+  grid-column: 5 / 6;
+  grid-row: 12/ 13;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd6-label {
+  grid-column: 6 / 7;
+  grid-row: 12/ 13;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd7-input {
+  grid-column: 5 / 6;
+  grid-row: 13 / 14;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd7-label {
+  grid-column: 6 / 7;
+  grid-row: 13/ 14;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd8-input {
+  grid-column: 5 / 6;
+  grid-row: 14 / 15;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd8-label {
+  grid-column: 6 / 7;
+  grid-row: 14 / 15;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd9-input {
+  grid-column: 5 / 6;
+  grid-row: 15 / 16;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd9-label {
+  grid-column: 6 / 7;
+  grid-row: 15 / 16;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd10-input {
+  grid-column: 5 / 6;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd10-label {
+  grid-column: 6 / 7;
+  grid-row: 16/ 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd11-input {
+  grid-column: 5 / 6;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd11-label {
+  grid-column: 6 / 7;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd12-input {
+  grid-column: 5 / 6;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd12-label {
+  grid-column: 6 / 7;
+  grid-row: 18/ 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd13-input {
+  grid-column: 5 / 6;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd13-label {
+  grid-column: 6 / 7;
+  grid-row: 19 / 20;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd14-input {
+  grid-column: 5 / 6;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd14-label {
+  grid-column: 6 / 7;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd15-input {
+  grid-column: 5 / 6;
+  grid-row: 21 / 22;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd15-label {
+  grid-column: 6 / 7;
+  grid-row: 21/ 22;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd16-input {
+  grid-column: 5 / 6;
+  grid-row: 22 / 23;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd16-label {
+  grid-column: 6 / 7;
+  grid-row: 22 / 23;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd17-input {
+  grid-column: 5 / 6;
+  grid-row: 23 / 24;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd17-label {
+  grid-column: 6 / 7;
+  grid-row: 23 / 24;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd18-input {
+  grid-column: 5 / 6;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd18-label {
+  grid-column: 6 / 7;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd19-input {
+  grid-column: 5 / 6;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd19-label {
+  grid-column: 6 / 7;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd20-input {
+  grid-column: 5 / 6;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd20-label {
+  grid-column: 6 / 7;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd21-input {
+  grid-column: 5 / 6;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd21-label {
+  grid-column: 6 / 7;
+  grid-row: 27 / 28;
+  text-align:left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd22-input {
+  grid-column: 5 / 6;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd22-label {
+  grid-column: 6 / 7;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd23-input {
+  grid-column: 5 / 6;
+  grid-row: 29 / 30;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd23-label {
+  grid-column: 6 / 7;
+  grid-row: 29 / 30;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd24-input {
+  grid-column: 5 / 6;
+  grid-row: 30 / 31;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd24-label {
+  grid-column: 6 / 7;
+  grid-row: 30 / 31;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd25-input {
+  grid-column: 5 / 6;
+  grid-row: 31 / 32;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd25-label {
+  grid-column: 6 / 7;
+  grid-row: 31 / 32;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd26-input {
+  grid-column: 5 / 6;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd26-label {
+  grid-column: 6 / 7;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd27-input {
+  grid-column: 5 / 6;
+  grid-row: 33 / 34;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd27-label {
+  grid-column: 6 / 7;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd28-input {
+  grid-column: 5 / 6;
+  grid-row: 34 / 35;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd28-label {
+  grid-column: 6 / 7;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd29-input {
+  grid-column: 5 / 6;
+  grid-row: 35 / 36;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sd29-label {
+  grid-column: 6 / 7;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sd30-label {
+  grid-column: 6 / 7;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.sd31-label {
+  grid-column: 6 / 7;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+.sd32-label {
+  grid-column: 6 / 7;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+/* SIGHT WORDS HEADINGS */
+
+.first9-heading {
+  grid-column: 7 / -1;
+  grid-row: 7 / 8;
+  /* margin-bottom: 10px; */
+  padding-top: 3px;
+  padding-bottom: 3px;
+  height: 18px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.second9-heading {
+  grid-column: 7 / -1;
+  grid-row: 15 / 16;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  height: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.third9-heading {
+  grid-column: 7 / -1;
+  grid-row: 23 / 24;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  height: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.fourth9-heading {
+  grid-column: 7 / -1;
+  grid-row: 31 / 32;
+  /* margin-top: 10px;
+  margin-bottom: 10px; */
+  height: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* SIGHT WORDS - FIRST 9 WEEKS */
+
+.sw191-input {
+  grid-column: 7 / 8;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw191-label {
+  grid-column: 8 / 9;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw192-input {
+  grid-column: 7 / 8;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw192-label {
+  grid-column: 8 / 9;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw193-input {
+  grid-column: 7 / 8;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw193-label {
+  grid-column: 8 / 9;
+  grid-row: 10 / 11;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw194-input {
+  grid-column: 7 / 8;
+  grid-row: 11 / 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw194-label {
+  grid-column: 8 / 9;
+  grid-row: 11 / 12;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw195-input {
+  grid-column: 7 / 8;
+  grid-row: 12 / 13;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw195-label {
+  grid-column: 8 / 9;
+  grid-row: 12 / 13;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw196-input {
+  grid-column: 7 / 8;
+  grid-row: 13 / 14;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw196-label {
+  grid-column: 8 / 9;
+  grid-row: 13 / 14;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw197-input {
+  grid-column: 7 / 8;
+  grid-row: 14 / 15;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw197-label {
+  grid-column: 8 / 9;
+  grid-row: 14 / 15;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw198-input {
+  grid-column: 9 / 10;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw198-label {
+  grid-column: 10 / 11;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw199-input {
+  grid-column: 9 / 10;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw199-label {
+  grid-column: 10 / 11;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1910-input {
+  grid-column: 9 / 10;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1910-label {
+  grid-column: 10 / 11;
+  grid-row: 10 / 11;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1911-input {
+  grid-column: 9 / 10;
+  grid-row: 11 / 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1911-label {
+  grid-column: 10 / 11;
+  grid-row: 11 / 12;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1912-input {
+  grid-column: 9 / 10;
+  grid-row: 12 / 13;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1912-label {
+  grid-column: 10 / 11;
+  grid-row: 12 / 13;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1913-input {
+  grid-column: 9 / 10;
+  grid-row: 13 / 14;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1913-label {
+  grid-column: 10 / 11;
+  grid-row: 13 / 14;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1914-input {
+  grid-column: 9 / 10;
+  grid-row: 14 / 15;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1914-label {
+  grid-column: 10 / 11;
+  grid-row: 14 / 15;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1915-input {
+  grid-column: 11 / 12;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1915-label {
+  grid-column: 12 / 13;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1916-input {
+  grid-column: 11 / 12;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1916-label {
+  grid-column: 12 / 13;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1917-input {
+  grid-column: 11 / 12;
+  grid-row: 10 / 11;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1917-label {
+  grid-column: 12 / 13;
+  grid-row: 10 / 11;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1918-input {
+  grid-column: 11 / 12;
+  grid-row: 11 / 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1918-label {
+  grid-column: 12 / 13;
+  grid-row: 11 / 12;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1919-input {
+  grid-column: 11 / 12;
+  grid-row: 12 / 13;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1919-label {
+  grid-column: 12 / 13;
+  grid-row: 12 / 13;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1920-input {
+  grid-column: 11 / 12;
+  grid-row: 13 / 14;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1920-label {
+  grid-column: 12 / 13;
+  grid-row: 13 / 14;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1921-input {
+  grid-column: 11 / 12;
+  grid-row: 14 / 15;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1921-label {
+  grid-column: 12 / 13;
+  grid-row: 14 / 15;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1922-input {
+  grid-column: 13 / 14;
+  grid-row: 8 / 9;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1922-label {
+  grid-column: 14 / 15;
+  grid-row: 8 / 9;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1923-input {
+  grid-column: 13 / 14;
+  grid-row: 9 / 10;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1923-label {
+  grid-column: 14 / 15;
+  grid-row: 9 / 10;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw1924-input {
+  grid-column: 13 / 14;
+  grid-row: 11 / 12;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw1924-label {
+  grid-column: 14 / 15;
+  grid-row: 11 / 12;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+
+/* SIGHT WORDS - SECOND 9 WEEKS */
+
+.sw291-input {
+  grid-column: 7 / 8;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw291-label {
+  grid-column: 8 / 9;
+  grid-row: 16 / 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw292-input {
+  grid-column: 7 / 8;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw292-label {
+  grid-column: 8 / 9;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw293-input {
+  grid-column: 7 / 8;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw293-label {
+  grid-column: 8 / 9;
+  grid-row: 18 / 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw294-input {
+  grid-column: 7 / 8;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw294-label {
+  grid-column: 8 / 9;
+  grid-row: 19 / 20;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw295-input {
+  grid-column: 7 / 8;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw295-label {
+  grid-column: 8 / 9;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw296-input {
+  grid-column: 7 / 8;
+  grid-row: 21 / 22;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw296-label {
+  grid-column: 8 / 9;
+  grid-row: 21 / 22;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw297-input {
+  grid-column: 7 / 8;
+  grid-row: 22 / 23;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw297-label {
+  grid-column: 8 / 9;
+  grid-row: 22 / 23;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw298-input {
+  grid-column: 9 / 10;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw298-label {
+  grid-column: 10 / 11;
+  grid-row: 16 / 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw299-input {
+  grid-column: 9 / 10;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw299-label {
+  grid-column: 10 / 11;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2910-input {
+  grid-column: 9 / 10;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2910-label {
+  grid-column: 10 / 11;
+  grid-row: 18 / 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2911-input {
+  grid-column: 9 / 10;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2911-label {
+  grid-column: 10 / 11;
+  grid-row: 19 / 20;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2912-input {
+  grid-column: 9 / 10;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2912-label {
+  grid-column: 10 / 11;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2913-input {
+  grid-column: 9 / 10;
+  grid-row: 21 / 22;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2913-label {
+  grid-column: 10 / 11;
+  grid-row: 21 / 22;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2914-input {
+  grid-column: 9 / 10;
+  grid-row: 22 / 23;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2914-label {
+  grid-column: 10 / 11;
+  grid-row: 22 / 23;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2915-input {
+  grid-column: 11 / 12;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2915-label {
+  grid-column: 12 / 13;
+  grid-row: 16 / 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2916-input {
+  grid-column: 11 / 12;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2916-label {
+  grid-column: 12 / 13;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2917-input {
+  grid-column: 11 / 12;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2917-label {
+  grid-column: 12 / 13;
+  grid-row: 18 / 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2918-input {
+  grid-column: 11 / 12;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2918-label {
+  grid-column: 12 / 13;
+  grid-row: 19 / 20;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2919-input {
+  grid-column: 11 / 12;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2919-label {
+  grid-column: 12 / 13;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2920-input {
+  grid-column: 11 / 12;
+  grid-row: 21 / 22;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2920-label {
+  grid-column: 12 / 13;
+  grid-row: 21 / 22;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2921-input {
+  grid-column: 11 / 12;
+  grid-row: 22 / 23;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2921-label {
+  grid-column: 12 / 13;
+  grid-row: 22 / 23;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2922-input {
+  grid-column: 13 / 14;
+  grid-row: 16 / 17;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2922-label {
+  grid-column: 14 / 15;
+  grid-row: 16 / 17;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2923-input {
+  grid-column: 13 / 14;
+  grid-row: 17 / 18;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2923-label {
+  grid-column: 14 / 15;
+  grid-row: 17 / 18;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2924-input {
+  grid-column: 13 / 14;
+  grid-row: 18 / 19;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2924-label {
+  grid-column: 14 / 15;
+  grid-row: 18 / 19;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2925-input {
+  grid-column: 13 / 14;
+  grid-row: 19 / 20;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2925-label {
+  grid-column: 14 / 15;
+  grid-row: 19 / 20;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw2926-input {
+  grid-column: 13 / 14;
+  grid-row: 20 / 21;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw2926-label {
+  grid-column: 14 / 15;
+  grid-row: 20 / 21;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+
+/* SIGHT WORDS - THIRD 9 WEEKS */
+
+.sw391-input {
+  grid-column: 7 / 8;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw391-label {
+  grid-column: 8 / 9;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw392-input {
+  grid-column: 7 / 8;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw392-label {
+  grid-column: 8 / 9;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw393-input {
+  grid-column: 7 / 8;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw393-label {
+  grid-column: 8 / 9;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw394-input {
+  grid-column: 7 / 8;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw394-label {
+  grid-column: 8 / 9;
+  grid-row: 27 / 28;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw395-input {
+  grid-column: 7 / 8;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw395-label {
+  grid-column: 8 / 9;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw396-input {
+  grid-column: 7 / 8;
+  grid-row: 29 / 30;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw396-label {
+  grid-column: 8 / 9;
+  grid-row: 29 / 30;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw397-input {
+  grid-column: 7 / 8;
+  grid-row: 30 / 31;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw397-label {
+  grid-column: 8 / 9;
+  grid-row: 30 / 31;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw398-input {
+  grid-column: 9 / 10;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw398-label {
+  grid-column: 10 / 11;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw399-input {
+  grid-column: 9 / 10;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw399-label {
+  grid-column: 10 / 11;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3910-input {
+  grid-column: 9 / 10;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3910-label {
+  grid-column: 10 / 11;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3911-input {
+  grid-column: 9 / 10;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3911-label {
+  grid-column: 10 / 11;
+  grid-row: 27 / 28;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3912-input {
+  grid-column: 9 / 10;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3912-label {
+  grid-column: 10 / 11;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3913-input {
+  grid-column: 9 / 10;
+  grid-row: 29 / 30;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3913-label {
+  grid-column: 10 / 11;
+  grid-row: 29 / 30;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3914-input {
+  grid-column: 9 / 10;
+  grid-row: 30 / 31;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3914-label {
+  grid-column: 10 / 11;
+  grid-row: 30 / 31;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3915-input {
+  grid-column: 11 / 12;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3915-label {
+  grid-column: 12 / 13;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3916-input {
+  grid-column: 11 / 12;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3916-label {
+  grid-column: 12 / 13;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3917-input {
+  grid-column: 11 / 12;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3917-label {
+  grid-column: 12 / 13;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3918-input {
+  grid-column: 11 / 12;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3918-label {
+  grid-column: 12 / 13;
+  grid-row: 27 / 28;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3919-input {
+  grid-column: 11 / 12;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3919-label {
+  grid-column: 12 / 13;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3920-input {
+  grid-column: 11 / 12;
+  grid-row: 29 / 30;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3920-label {
+  grid-column: 12 / 13;
+  grid-row: 29 / 30;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3921-input {
+  grid-column: 11 / 12;
+  grid-row: 30 / 31;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3921-label {
+  grid-column: 12 / 13;
+  grid-row: 30 / 31;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3922-input {
+  grid-column: 13 / 14;
+  grid-row: 24 / 25;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3922-label {
+  grid-column: 14 / 15;
+  grid-row: 24 / 25;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3923-input {
+  grid-column: 13 / 14;
+  grid-row: 25 / 26;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3923-label {
+  grid-column: 14 / 15;
+  grid-row: 25 / 26;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3924-input {
+  grid-column: 13 / 14;
+  grid-row: 26 / 27;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3924-label {
+  grid-column: 14 / 15;
+  grid-row: 26 / 27;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3925-input {
+  grid-column: 13 / 14;
+  grid-row: 27 / 28;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3925-label {
+  grid-column: 14 / 15;
+  grid-row: 27 / 28;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw3926-input {
+  grid-column: 13 / 14;
+  grid-row: 28 / 29;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw3926-label {
+  grid-column: 14 / 15;
+  grid-row: 28 / 29;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+
+
+/* SIGHT WORDS - FOURTH 9 WEEKS */
+
+.sw491-input {
+  grid-column: 7 / 8;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw491-label {
+  grid-column: 8 / 9;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw492-input {
+  grid-column: 7 / 8;
+  grid-row: 33 / 34;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw492-label {
+  grid-column: 8 / 9;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw493-input {
+  grid-column: 7 / 8;
+  grid-row: 34 / 35;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw493-label {
+  grid-column: 8 / 9;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw494-input {
+  grid-column: 7 / 8;
+  grid-row: 35 / 36;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw494-label {
+  grid-column: 8 / 9;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw495-input {
+  grid-column: 7 / 8;
+  grid-row: 36 / 37;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw495-label {
+  grid-column: 8 / 9;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw496-input {
+  grid-column: 7 / 8;
+  grid-row: 37 / 38;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw496-label {
+  grid-column: 8 / 9;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw497-input {
+  grid-column: 7 / 8;
+  grid-row: 38 / 39;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw497-label {
+  grid-column: 8 / 9;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw498-input {
+  grid-column: 9 / 10;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw498-label {
+  grid-column: 10 / 11;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw499-input {
+  grid-column: 9 / 10;
+  grid-row: 33 / 34;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw499-label {
+  grid-column: 10 / 11;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4910-input {
+  grid-column: 9 / 10;
+  grid-row: 34 / 35;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4910-label {
+  grid-column: 10 / 11;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4911-input {
+  grid-column: 9 / 10;
+  grid-row: 35 / 36;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4911-label {
+  grid-column: 10 / 11;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4912-input {
+  grid-column: 9 / 10;
+  grid-row: 36 / 37;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4912-label {
+  grid-column: 10 / 11;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4913-input {
+  grid-column: 9 / 10;
+  grid-row: 37 / 38;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4913-label {
+  grid-column: 10 / 11;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4914-input {
+  grid-column: 9 / 10;
+  grid-row: 38 / 39;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4914-label {
+  grid-column: 10 / 11;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4915-input {
+  grid-column: 11 / 12;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4915-label {
+  grid-column: 12 / 13;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4916-input {
+  grid-column: 11 / 12;
+  grid-row: 33 / 34;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4916-label {
+  grid-column: 12 / 13;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4917-input {
+  grid-column: 11 / 12;
+  grid-row: 34 / 35;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4917-label {
+  grid-column: 12 / 13;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4918-input {
+  grid-column: 11 / 12;
+  grid-row: 35 /36;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4918-label {
+  grid-column: 12 / 13;
+  grid-row: 35 / 36;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4919-input {
+  grid-column: 11 / 12;
+  grid-row: 36 / 37;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4919-label {
+  grid-column: 12 / 13;
+  grid-row: 36 / 37;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4920-input {
+  grid-column: 11 / 12;
+  grid-row: 37 / 38;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4920-label {
+  grid-column: 12 / 13;
+  grid-row: 37 / 38;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4921-input {
+  grid-column: 11 / 12;
+  grid-row: 38 / 39;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4921-label {
+  grid-column: 12 / 13;
+  grid-row: 38 / 39;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4922-input {
+  grid-column: 13 / 14;
+  grid-row: 32 / 33;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4922-label {
+  grid-column: 14 / 15;
+  grid-row: 32 / 33;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4923-input {
+  grid-column: 13 / 14;
+  grid-row: 33 / 34;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4923-label {
+  grid-column: 14 / 15;
+  grid-row: 33 / 34;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
+
+.sw4924-input {
+  grid-column: 13 / 14;
+  grid-row: 34 / 35;
+  justify-self: end;
+  align-self: center;
+  margin-right: 3px;
+}
+.sw4924-label {
+  grid-column: 14 / 15;
+  grid-row: 34 / 35;
+  text-align: left;
+  padding-top: 6px;
+  padding-left: 3px;
+  border-right: 1px solid blanchedalmond;
+}
